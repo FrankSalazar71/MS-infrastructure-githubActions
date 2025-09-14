@@ -1,0 +1,52 @@
+
+ppe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxTransferService#getAll()Ljava/util/List;È
+ﬁC:/Users/frank/Desktop/Carpeta General/microservicio-infrastructure-actualizado/microservicios/vg-ms-infrastructure/src/main/java/pe/edu/vallegrande/ms_infraestructura/application/services/impl/WaterBoxTransferService.java!* !(0"1*¿
+1" "()è
+å
+" "()`
+%0Zpe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxTransferRepository"__id*ó
+
+__unknown_file ({*yY
+Wpe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxTransferService"
+waterBoxTransferRepositoryÄ˝
+" "(3
+%1java.util.List"Porg.springframework.data.repository.ListCrudRepository#findAll()Ljava/util/List;*~
+
+__unknown_file (b
+`
+%0Zpe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxTransferRepository2	findAll()¢ü
+" "(<
+%2java.util.stream.Stream"6java.util.Collection#stream()Ljava/util/stream/Stream;*2
+
+__unknown_file (
+
+%1java.util.List2stream()ÜÉ
+" #(&
+%3java.util.stream.Stream"Sjava.util.stream.Stream#map(Ljava/util/function/Function;)Ljava/util/stream/Stream;*;
+
+__unknown_file (
+
+%2java.util.stream.Stream*"
+
+__unknown_file (
+""2"map(Ljava/util/function/Function;)Æ
+´
+$ $(, 
+%4java.util.stream.Collector"@java.util.stream.Collectors#toList()Ljava/util/stream/Collector;*;
+
+__unknown_file ("
+java.util.stream.Collectorsòï
+" $(-
+%5java.util.List"Ojava.util.stream.Stream#collect(Ljava/util/stream/Collector;)Ljava/lang/Object;*;
+
+__unknown_file (
+
+%3java.util.stream.Stream*>
+
+__unknown_file ("
+ 
+%4java.util.stream.Collector2%collect(Ljava/util/stream/Collector;)""
+" $(.
+
+%5java.util.ListB[Y
+Wpe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxTransferServiceH

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SuperAdminRest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ms_infraestructura</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.ms_infraestructura.infrastructure.rest.superAdmin</a> &gt; <span class="el_source">SuperAdminRest.java</span></div><h1>SuperAdminRest.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.ms_infraestructura.infrastructure.rest.superAdmin;
+
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxService;
+import pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService;
+import pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxRequest;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequest;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxAssignmentResponse;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxTransferResponse;
+
+import java.util.List;
+
+@RestController
+@RequestMapping(&quot;/api/management&quot;)
+<span class="fc" id="L22">@RequiredArgsConstructor</span>
+public class SuperAdminRest {
+
+    private final IWaterBoxService waterBoxService;
+    private final IWaterBoxAssignmentService waterBoxAssignmentService;
+    private final IWaterBoxTransferService waterBoxTransferService;
+
+    // ===============================
+    // GESTIÓN DE WATER BOXES
+    // ===============================
+
+    @GetMapping(&quot;/water-boxes/active&quot;)
+    public ResponseEntity&lt;List&lt;WaterBoxResponse&gt;&gt; getAllActiveWaterBoxes() {
+<span class="nc" id="L35">        return ResponseEntity.ok(waterBoxService.getAllActive());</span>
+    }
+
+    @GetMapping(&quot;/water-boxes/inactive&quot;)
+    public ResponseEntity&lt;List&lt;WaterBoxResponse&gt;&gt; getAllInactiveWaterBoxes() {
+<span class="nc" id="L40">        return ResponseEntity.ok(waterBoxService.getAllInactive());</span>
+    }
+
+    @GetMapping(&quot;/water-boxes/{id}&quot;)
+    public ResponseEntity&lt;WaterBoxResponse&gt; getWaterBoxById(@PathVariable Long id) {
+<span class="nc" id="L45">        return ResponseEntity.ok(waterBoxService.getById(id));</span>
+    }
+
+    @PostMapping(&quot;/water-boxes&quot;)
+    public ResponseEntity&lt;WaterBoxResponse&gt; createWaterBox(@Valid @RequestBody WaterBoxRequest request) {
+<span class="nc" id="L50">        return ResponseEntity.status(HttpStatus.CREATED).body(waterBoxService.save(request));</span>
+    }
+
+    @PutMapping(&quot;/water-boxes/{id}&quot;)
+    public ResponseEntity&lt;WaterBoxResponse&gt; updateWaterBox(@PathVariable Long id, @Valid @RequestBody WaterBoxRequest request) {
+<span class="nc" id="L55">        return ResponseEntity.ok(waterBoxService.update(id, request));</span>
+    }
+
+    @DeleteMapping(&quot;/water-boxes/{id}&quot;)
+    public ResponseEntity&lt;Void&gt; deleteWaterBox(@PathVariable Long id) {
+<span class="nc" id="L60">        waterBoxService.delete(id);</span>
+<span class="nc" id="L61">        return ResponseEntity.noContent().build();</span>
+    }
+
+    @PatchMapping(&quot;/water-boxes/{id}/restore&quot;)
+    public ResponseEntity&lt;WaterBoxResponse&gt; restoreWaterBox(@PathVariable Long id) {
+<span class="nc" id="L66">        return ResponseEntity.ok(waterBoxService.restore(id));</span>
+    }
+
+    // ===============================
+    // GESTIÓN DE WATER BOX ASSIGNMENTS
+    // ===============================
+
+    @GetMapping(&quot;/water-box-assignments/active&quot;)
+    public ResponseEntity&lt;List&lt;WaterBoxAssignmentResponse&gt;&gt; getAllActiveAssignments() {
+<span class="nc" id="L75">        return ResponseEntity.ok(waterBoxAssignmentService.getAllActive());</span>
+    }
+
+    @GetMapping(&quot;/water-box-assignments/inactive&quot;)
+    public ResponseEntity&lt;List&lt;WaterBoxAssignmentResponse&gt;&gt; getAllInactiveAssignments() {
+<span class="nc" id="L80">        return ResponseEntity.ok(waterBoxAssignmentService.getAllInactive());</span>
+    }
+
+    @GetMapping(&quot;/water-box-assignments/{id}&quot;)
+    public ResponseEntity&lt;WaterBoxAssignmentResponse&gt; getAssignmentById(@PathVariable Long id) {
+<span class="nc" id="L85">        return ResponseEntity.ok(waterBoxAssignmentService.getById(id));</span>
+    }
+
+    @PostMapping(&quot;/water-box-assignments&quot;)
+    public ResponseEntity&lt;WaterBoxAssignmentResponse&gt; createAssignment(@Valid @RequestBody WaterBoxAssignmentRequest request) {
+<span class="nc" id="L90">        return ResponseEntity.status(HttpStatus.CREATED).body(waterBoxAssignmentService.save(request));</span>
+    }
+
+    @PutMapping(&quot;/water-box-assignments/{id}&quot;)
+    public ResponseEntity&lt;WaterBoxAssignmentResponse&gt; updateAssignment(@PathVariable Long id, @Valid @RequestBody WaterBoxAssignmentRequest request) {
+<span class="nc" id="L95">        return ResponseEntity.ok(waterBoxAssignmentService.update(id, request));</span>
+    }
+
+    @DeleteMapping(&quot;/water-box-assignments/{id}&quot;)
+    public ResponseEntity&lt;Void&gt; deleteAssignment(@PathVariable Long id) {
+<span class="nc" id="L100">        waterBoxAssignmentService.delete(id);</span>
+<span class="nc" id="L101">        return ResponseEntity.noContent().build();</span>
+    }
+
+    @PatchMapping(&quot;/water-box-assignments/{id}/restore&quot;)
+    public ResponseEntity&lt;WaterBoxAssignmentResponse&gt; restoreAssignment(@PathVariable Long id) {
+<span class="nc" id="L106">        return ResponseEntity.ok(waterBoxAssignmentService.restore(id));</span>
+    }
+
+    // ===============================
+    // GESTIÓN DE WATER BOX TRANSFERS
+    // ===============================
+
+    @GetMapping(&quot;/water-box-transfers&quot;)
+    public ResponseEntity&lt;List&lt;WaterBoxTransferResponse&gt;&gt; getAllTransfers() {
+<span class="nc" id="L115">        return ResponseEntity.ok(waterBoxTransferService.getAll());</span>
+    }
+
+    @GetMapping(&quot;/water-box-transfers/{id}&quot;)
+    public ResponseEntity&lt;WaterBoxTransferResponse&gt; getTransferById(@PathVariable Long id) {
+<span class="nc" id="L120">        return ResponseEntity.ok(waterBoxTransferService.getById(id));</span>
+    }
+
+    @PostMapping(&quot;/water-box-transfers&quot;)
+    public ResponseEntity&lt;WaterBoxTransferResponse&gt; createTransfer(@Valid @RequestBody WaterBoxTransferRequest request) {
+<span class="nc" id="L125">        return ResponseEntity.status(HttpStatus.CREATED).body(waterBoxTransferService.save(request));</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

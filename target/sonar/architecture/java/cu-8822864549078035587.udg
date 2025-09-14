@@ -1,0 +1,223 @@
+
+1.0infrastructuraJavaFrontend"1757830687575*java2.Bù
+m
+hsrc/main/java/pe/edu/vallegrande/ms_infraestructura/application/services/IWaterBoxAssignmentService.java2
+
+package4
+?
+:pe.edu.vallegrande.ms_infraestructura.application.services5
+Z
+Upe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+ 
+IWaterBoxAssignmentService12
+
+
+uses13
+z
+tpe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService#getAllActive()Ljava/util/List;15
+
+method16
+
+getAllActive17
+b
+\pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxAssignmentResponse19
+
+unknown20
+|
+vpe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService#getAllInactive()Ljava/util/List;22
+
+getAllInactive23
+Ô
+Ípe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService#getById(Ljava/lang/Long;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse;25
+
+getById26
+
+returns27
+
+–pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService#save(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxAssignmentRequest;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse;29
+
+
+save30
+`
+Zpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequest32
+
+	has param33
+
+is type34
+¯
+¨pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService#update(Ljava/lang/Long;Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxAssignmentRequest;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse;36
+
+update37
+u
+ope.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService#delete(Ljava/lang/Long;)V39
+
+delete40
+Ô
+Ípe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService#restore(Ljava/lang/Long;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse;42
+
+restore43J
+
+1
+12Z
+
+3	
+354j±
+9
+64
+678 *
+1 (,:3B
+	
+9
+10
+
+
+11
+12
+
+31
+313220
+
+18
+181920
+@
+24:
+242516 *
+1 (26:3B
+	
+9
+10
+
+
+11
+26
+@
+38:
+383916 *
+1 (	26:3B
+	
+9
+10
+
+
+11
+40
+@
+14:
+141516 *
+1	 	(	26:3B
+	
+9
+10
+
+
+11
+17
+@
+28:
+282916 *
+1 (26:3B
+	
+9
+10
+
+
+11
+30
+@
+41:
+414216 *
+1 (26:3B
+	
+9
+10
+
+
+11
+43
+@
+21:
+212216 *
+1
+ 
+(	26:3B
+	
+9
+10
+
+
+11
+23
+@
+35:
+353616 *
+1 (26:3B
+	
+9
+10
+
+
+11
+37rÉ
+
+6613*
+1 (,
+
+141813*
+1	
+ 	($
+
+211813*
+1
+
+ 
+($
+
+241827*
+1 (
+
+241813*
+1 (
+
+281827*
+1 (
+
+283133*
+1% (>
+
+281813*
+1 (
+
+283134*
+1? (F
+
+283113*
+1% (>
+
+351827*
+1 (
+
+353133*
+10 (I
+
+351813*
+1 (
+
+353134*
+1J (Q
+
+353113*
+10 (I
+
+411827*
+1 (
+
+411813*
+1 (

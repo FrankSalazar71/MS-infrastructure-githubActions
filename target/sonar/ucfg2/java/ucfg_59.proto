@@ -1,0 +1,47 @@
+
+a__sonar_lambda_12$pe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxService·
+÷C:/Users/frank/Desktop/Carpeta General/microservicio-infrastructure-actualizado/microservicios/vg-ms-infrastructure/src/main/java/pe/edu/vallegrande/ms_infraestructura/application/services/impl/WaterBoxService.javaQ Q(v"startingBlock*”
+startingBlockQ Q(v≤
+Ø
+
+__unknown_file (
+idjava.lang.Long"__id*w
+
+__unknown_file ([*YQ
+Ope.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxService"
+id*
+1*„
+1Q9 Q(Kt
+r
+Q9 Q(P
+%3java.lang.String"__concat* 
+Q9 Q(K
+WaterBox con ID *"
+QN Q(P
+
+idjava.lang.Longà
+Ö
+Q9 Q(u
+%4java.lang.String"__concat*$
+Q9 Q(P
+
+%3java.lang.String*1
+QS Q(u%#
+! no encontrada para eliminaci√≥n.π∂
+Q' Q(8W
+%5Qpe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.NotFoundException"Qpe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.NotFoundExceptionØ
+¨
+Q# Q(v
+%6"mpe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.NotFoundException#<init>(Ljava/lang/String;)V*u
+
+__unknown_file (Y
+W
+%5Qpe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.NotFoundException*4
+
+__unknown_file (
+
+%4java.lang.String"e
+Q# Q(vY
+W
+%5Qpe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.NotFoundExceptionB
+java.util.function.Supplier

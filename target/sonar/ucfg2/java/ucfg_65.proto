@@ -1,0 +1,187 @@
+
+Õpe.edu.vallegrande.ms_infraestructura.infrastructure.rest.admin.AdminRest#createWaterBox(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxRequest;)Lorg/springframework/http/ResponseEntity;Û
+ÐC:/Users/frank/Desktop/Carpeta General/microservicio-infrastructure-actualizado/microservicios/vg-ms-infrastructure/src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/rest/admin/AdminRest.java ,  (:"startingBlock* 
+startingBlock :  (g²
+¯
+
+__unknown_file (
+%5"__id*†
+
+__unknown_file (j*h
+[
+requestPpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxRequest"	
+boxCode»
+¸
+
+__unknown_file (
+%6"__id*
+
+__unknown_file (s*q
+[
+requestPpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxRequest"
+installationDate¹
+¶
+
+__unknown_file (
+%7"__id*
+
+__unknown_file (q*o
+[
+requestPpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxRequest"
+organizationId|
+z
+ ;  (A
+%8"
+__annotate*8
+
+__unknown_file (
+jakarta.validation.Valid*"
+
+__unknown_file (
+
+%7˜
+•
+ B  (N
+%9"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*"
+
+__unknown_file (
+
+%7Ô
+Ñ
+ _  (fo
+[
+requestPpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxRequest"
+organizationId"__annotation*"
+
+__unknown_file (
+
+%8*"
+
+__unknown_file (
+
+%9}
+{
+ ;  (A
+%10"
+__annotate*8
+
+__unknown_file (
+jakarta.validation.Valid*"
+
+__unknown_file (
+
+%5™
+–
+ B  (N
+%11"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*"
+
+__unknown_file (
+
+%5Ï
+Ì
+ _  (fh
+[
+requestPpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxRequest"	
+boxCode"__annotation*#
+
+__unknown_file (
+
+%10*#
+
+__unknown_file (
+
+%11}
+{
+ ;  (A
+%12"
+__annotate*8
+
+__unknown_file (
+jakarta.validation.Valid*"
+
+__unknown_file (
+
+%6™
+–
+ B  (N
+%13"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*"
+
+__unknown_file (
+
+%6Ø
+Õ
+ _  (fq
+[
+requestPpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxRequest"
+installationDate"__annotation*#
+
+__unknown_file (
+
+%12*#
+
+__unknown_file (
+
+%13*
+1*Ð
+1! !(a
+_
+!% !(7)
+%0#org.springframework.http.HttpStatus"__id*"
+
+__unknown_file (
+""ë
+è
+! !(89
+%13org.springframework.http.ResponseEntity$BodyBuilder"Žorg.springframework.http.ResponseEntity#status(Lorg/springframework/http/HttpStatusCode;)Lorg/springframework/http/ResponseEntity$BodyBuilder;*G
+
+__unknown_file (+")
+'org.springframework.http.ResponseEntity*G
+
+__unknown_file (+
+)
+%0#org.springframework.http.HttpStatusæ
+ã
+!> !(MQ
+%2Kpe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxService"__id*~
+
+__unknown_file (b*`K
+Ipe.edu.vallegrande.ms_infraestructura.infrastructure.rest.admin.AdminRest"
+waterBoxService¨¥
+!> !([X
+%3Rpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse"øpe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxService#save(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxRequest;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxResponse;*o
+
+__unknown_file (S
+Q
+%2Kpe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxService*y
+
+__unknown_file (]
+[
+requestPpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxRequest2Xsave(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxRequest;)ž›
+! !(\-
+%4'org.springframework.http.ResponseEntity"uorg.springframework.http.ResponseEntity$BodyBuilder#body(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;*W
+
+__unknown_file (;
+9
+%13org.springframework.http.ResponseEntity$BodyBuilder*v
+
+__unknown_file (Z
+X
+%3Rpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse2body(Ljava/lang/Object;)";
+! !(]/
+-
+%4'org.springframework.http.ResponseEntity:g
+ ;  (f[
+requestPpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxRequestBMK
+Ipe.edu.vallegrande.ms_infraestructura.infrastructure.rest.admin.AdminRestH

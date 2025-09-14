@@ -1,0 +1,15 @@
+pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.GlobalExceptionHandler#handleGlobalException(Ljava/lang/Exception;Lorg/springframework/web/context/request/WebRequest;)Lorg/springframework/http/ResponseEntity;
+false
+7e4ac5ae58dbb15e2c70c5e3a8cb9728
+java.lang.RuntimeException#<init>(Ljava/lang/Throwable;)V
+java.lang.RuntimeException#instance-init#
+java.lang.String#contains(Ljava/lang/CharSequence;)Z
+java.time.LocalDateTime#now()Ljava/time/LocalDateTime;
+org.springframework.http.HttpStatus#value()I
+org.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatusCode;)V
+org.springframework.http.ResponseEntity#instance-init#
+pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.GlobalExceptionHandler$ErrorDetails#<init>(Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;I)V
+pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.GlobalExceptionHandler$ErrorDetails#instance-init#
+==
+getDescription org.springframework.web.context.request.WebRequest#getDescription(Z)Ljava/lang/String;
+getMessage java.lang.Throwable#getMessage()Ljava/lang/String;

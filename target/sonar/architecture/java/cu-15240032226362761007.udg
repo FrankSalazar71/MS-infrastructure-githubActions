@@ -1,0 +1,235 @@
+
+1.0infrastructuraJavaFrontend"1757830679846*java2.BÂ
+j
+esrc/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxResponse.java2
+
+package4
+F
+Ape.edu.vallegrande.ms_infraestructura.infrastructure.dto.response5
+W
+Rpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+WaterBoxResponse12
+
+lombok.Getter14
+
+unknown15
+
+annotated by16
+
+
+uses17
+
+lombok.Setter19
+
+lombok.Builder21
+[
+Upe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse.id23
+
+field24
+
+private25
+
+id26
+g
+ape.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse.organizationId28
+
+organizationId29
+`
+Zpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse.boxCode31
+
+boxCode32
+`
+Zpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse.boxType34
+
+boxType35
+@
+:pe.edu.vallegrande.ms_infraestructura.domain.enums.BoxType37
+
+is type38
+i
+cpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse.installationDate40
+
+installationDate41
+l
+fpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse.currentAssignmentId43
+
+currentAssignmentId44
+_
+Ype.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse.status46
+
+status47
+?
+9pe.edu.vallegrande.ms_infraestructura.domain.enums.Status49
+b
+\pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxResponse.createdAt51
+
+	createdAt52J
+
+1
+12Z
+
+3	
+354j¯
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+
+48
+484915
+@
+22:
+222324 *
+1 (26:3B
+	
+9
+25
+
+
+11
+26
+@
+50:
+505124 *
+1 (26:3B
+	
+9
+25
+
+
+11
+52
+
+18
+181915
+
+13
+131415
+@
+39:
+394024 *
+1 (26:3B
+	
+9
+25
+
+
+11
+41
+@
+33:
+333424 *
+1 (26:3B
+	
+9
+25
+
+
+11
+35
+@
+45:
+454624 *
+1 (26:3B
+	
+9
+25
+
+
+11
+47
+@
+27:
+272824 *
+1 (26:3B
+	
+9
+25
+
+
+11
+29
+@
+30:
+303124 *
+1 (26:3B
+	
+9
+25
+
+
+11
+32
+@
+42:
+424324 *
+1 (26:3B
+	
+9
+25
+
+
+11
+44
+
+20
+202115
+
+36
+363715r×
+
+61316*
+1 (
+
+61317*
+1 (
+
+61816*
+1 (
+
+61817*
+1 (
+
+62016*
+1 (
+
+62017*
+1 (	
+
+6617*
+1 (
+
+333638*
+1 (
+
+333617*
+1 (
+
+333617*
+1 (
+
+454838*
+1 (
+
+454817*
+1 (
+
+454817*
+1 (

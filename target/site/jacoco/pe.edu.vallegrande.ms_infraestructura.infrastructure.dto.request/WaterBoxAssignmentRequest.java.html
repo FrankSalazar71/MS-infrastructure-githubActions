@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WaterBoxAssignmentRequest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ms_infraestructura</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request</a> &gt; <span class="el_source">WaterBoxAssignmentRequest.java</span></div><h1>WaterBoxAssignmentRequest.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request;
+
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+@Getter
+<span class="nc" id="L14">@Setter</span>
+<span class="nc" id="L15">@Builder</span>
+public class WaterBoxAssignmentRequest {
+    @NotNull(message = &quot;El ID de la caja de agua no puede ser nulo.&quot;)
+<span class="nc" id="L18">    private Long waterBoxId;</span>
+
+    @NotBlank(message = &quot;El ID de usuario no puede estar vacío.&quot;)
+<span class="nc" id="L21">    private String userId;</span>
+
+    @NotNull(message = &quot;La fecha de inicio no puede ser nula.&quot;)
+<span class="nc" id="L24">    private LocalDateTime startDate;</span>
+
+    @NotNull(message = &quot;La tarifa mensual no puede ser nula.&quot;)
+    @DecimalMin(value = &quot;0.01&quot;, message = &quot;La tarifa mensual debe ser mayor que cero.&quot;)
+<span class="nc" id="L28">    private BigDecimal monthlyFee;</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WaterBoxTransferService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ms_infraestructura</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.ms_infraestructura.application.services.impl</a> &gt; <span class="el_source">WaterBoxTransferService.java</span></div><h1>WaterBoxTransferService.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.ms_infraestructura.application.services.impl;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService;
+import pe.edu.vallegrande.ms_infraestructura.domain.enums.Status;
+import pe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox;
+import pe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment;
+import pe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxTransfer;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxTransferResponse;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.BadRequestException;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.NotFoundException;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxAssignmentRepository;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxRepository;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxTransferRepository;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.stream.Collectors;
+
+@Service
+<span class="fc" id="L24">@RequiredArgsConstructor</span>
+public class WaterBoxTransferService implements IWaterBoxTransferService {
+
+    private final WaterBoxTransferRepository waterBoxTransferRepository;
+    private final WaterBoxAssignmentRepository waterBoxAssignmentRepository;
+    private final WaterBoxRepository waterBoxRepository;
+
+    @Override
+    @Transactional(readOnly = true)
+    public List&lt;WaterBoxTransferResponse&gt; getAll() {
+<span class="nc" id="L34">        return waterBoxTransferRepository.findAll().stream()</span>
+<span class="nc" id="L35">                .map(this::toResponse)</span>
+<span class="nc" id="L36">                .collect(Collectors.toList());</span>
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public WaterBoxTransferResponse getById(Long id) {
+<span class="nc" id="L42">        WaterBoxTransfer transfer = waterBoxTransferRepository.findById(id)</span>
+<span class="nc" id="L43">                .orElseThrow(() -&gt; new NotFoundException(&quot;WaterBoxTransfer con ID &quot; + id + &quot; no encontrada.&quot;));</span>
+<span class="nc" id="L44">        return toResponse(transfer);</span>
+    }
+
+    @Override
+    @Transactional
+    public WaterBoxTransferResponse save(WaterBoxTransferRequest request) {
+        // 1. Validar que la caja de agua exista y esté activa
+<span class="nc" id="L51">        WaterBox waterBox = waterBoxRepository.findById(request.getWaterBoxId())</span>
+<span class="nc" id="L52">                .orElseThrow(() -&gt; new NotFoundException(&quot;WaterBox con ID &quot; + request.getWaterBoxId() + &quot; no encontrada.&quot;));</span>
+
+<span class="nc bnc" id="L54" title="All 2 branches missed.">        if (waterBox.getStatus().equals(Status.INACTIVE)) {</span>
+<span class="nc" id="L55">            throw new BadRequestException(&quot;No se puede transferir una WaterBox inactiva.&quot;);</span>
+        }
+
+        // 2. Validar y procesar la asignación antigua (old_assignment_id)
+<span class="nc" id="L59">        WaterBoxAssignment oldAssignment = waterBoxAssignmentRepository.findById(request.getOldAssignmentId())</span>
+<span class="nc" id="L60">                .orElseThrow(() -&gt; new NotFoundException(&quot;Asignación antigua con ID &quot; + request.getOldAssignmentId() + &quot; no encontrada.&quot;));</span>
+
+<span class="nc bnc" id="L62" title="All 2 branches missed.">        if (!oldAssignment.getWaterBoxId().equals(waterBox.getId())) {</span>
+<span class="nc" id="L63">            throw new BadRequestException(&quot;La asignación antigua no pertenece a la WaterBox especificada.&quot;);</span>
+        }
+<span class="nc bnc" id="L65" title="All 2 branches missed.">        if (oldAssignment.getStatus().equals(Status.INACTIVE)) {</span>
+<span class="nc" id="L66">            throw new BadRequestException(&quot;La asignación antigua ya está inactiva. No se puede iniciar transferencia desde una asignación inactiva.&quot;);</span>
+        }
+        // Asegurarse de que la oldAssignmentId sea la asignación actualmente activa para esa caja de agua
+<span class="nc bnc" id="L69" title="All 4 branches missed.">        if (waterBox.getCurrentAssignmentId() == null || !waterBox.getCurrentAssignmentId().equals(oldAssignment.getId())) {</span>
+<span class="nc" id="L70">            throw new BadRequestException(&quot;La asignación antigua proporcionada no es la asignación actual activa para esta WaterBox.&quot;);</span>
+        }
+
+
+        // 3. Validar y procesar la nueva asignación (new_assignment_id)
+<span class="nc" id="L75">        WaterBoxAssignment newAssignment = waterBoxAssignmentRepository.findById(request.getNewAssignmentId())</span>
+<span class="nc" id="L76">                .orElseThrow(() -&gt; new NotFoundException(&quot;Nueva asignación con ID &quot; + request.getNewAssignmentId() + &quot; no encontrada.&quot;));</span>
+
+<span class="nc bnc" id="L78" title="All 2 branches missed.">        if (!newAssignment.getWaterBoxId().equals(waterBox.getId())) {</span>
+<span class="nc" id="L79">            throw new BadRequestException(&quot;La nueva asignación no pertenece a la WaterBox especificada.&quot;);</span>
+        }
+<span class="nc bnc" id="L81" title="All 2 branches missed.">        if (newAssignment.getStatus().equals(Status.INACTIVE)) {</span>
+<span class="nc" id="L82">            throw new BadRequestException(&quot;La nueva asignación está inactiva. Debería estar activa para una nueva transferencia.&quot;);</span>
+        }
+<span class="nc bnc" id="L84" title="All 2 branches missed.">        if (newAssignment.getId().equals(oldAssignment.getId())) {</span>
+<span class="nc" id="L85">            throw new BadRequestException(&quot;La asignación antigua y la nueva no pueden ser la misma.&quot;);</span>
+        }
+
+        // 4. Crear la transferencia
+<span class="nc" id="L89">        WaterBoxTransfer transfer = toEntity(request);</span>
+<span class="nc" id="L90">        transfer.setCreatedAt(LocalDateTime.now());</span>
+<span class="nc" id="L91">        WaterBoxTransfer savedTransfer = waterBoxTransferRepository.save(transfer);</span>
+
+        // 5. Actualizar la asignación antigua: desactivarla y asignarle la fecha de fin y el ID de transferencia
+<span class="nc" id="L94">        oldAssignment.setStatus(Status.INACTIVE);</span>
+<span class="nc" id="L95">        oldAssignment.setEndDate(LocalDateTime.now());</span>
+<span class="nc" id="L96">        oldAssignment.setTransferId(savedTransfer.getId());</span>
+<span class="nc" id="L97">        waterBoxAssignmentRepository.save(oldAssignment);</span>
+
+        // 6. Actualizar la caja de agua con la nueva asignación actual
+<span class="nc" id="L100">        waterBox.setCurrentAssignmentId(newAssignment.getId());</span>
+<span class="nc" id="L101">        waterBoxRepository.save(waterBox);</span>
+
+<span class="nc" id="L103">        return toResponse(savedTransfer);</span>
+    }
+
+    private WaterBoxTransfer toEntity(WaterBoxTransferRequest request) {
+<span class="nc" id="L107">        return WaterBoxTransfer.builder()</span>
+<span class="nc" id="L108">                .waterBoxId(request.getWaterBoxId())</span>
+<span class="nc" id="L109">                .oldAssignmentId(request.getOldAssignmentId())</span>
+<span class="nc" id="L110">                .newAssignmentId(request.getNewAssignmentId())</span>
+<span class="nc" id="L111">                .transferReason(request.getTransferReason())</span>
+<span class="nc" id="L112">                .documents(request.getDocuments())</span>
+<span class="nc" id="L113">                .build();</span>
+    }
+
+    private WaterBoxTransferResponse toResponse(WaterBoxTransfer transfer) {
+<span class="nc" id="L117">        return WaterBoxTransferResponse.builder()</span>
+<span class="nc" id="L118">                .id(transfer.getId())</span>
+<span class="nc" id="L119">                .waterBoxId(transfer.getWaterBoxId())</span>
+<span class="nc" id="L120">                .oldAssignmentId(transfer.getOldAssignmentId())</span>
+<span class="nc" id="L121">                .newAssignmentId(transfer.getNewAssignmentId())</span>
+<span class="nc" id="L122">                .transferReason(transfer.getTransferReason())</span>
+<span class="nc" id="L123">                .documents(transfer.getDocuments())</span>
+<span class="nc" id="L124">                .createdAt(transfer.getCreatedAt())</span>
+<span class="nc" id="L125">                .build();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

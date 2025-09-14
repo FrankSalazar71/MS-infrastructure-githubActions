@@ -1,0 +1,9 @@
+pe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxService#getAllActive()Ljava/util/List;
+false
+082d1dd0aa2042f5631efd4aa3e421a0
+java.util.stream.Collectors#toList()Ljava/util/stream/Collector;
+==
+collect java.util.stream.Stream#collect(Ljava/util/stream/Collector;)Ljava/lang/Object;
+findByStatus pe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxRepository#findByStatus(Lpe/edu/vallegrande/ms_infraestructura/domain/enums/Status;)Ljava/util/List;
+map java.util.stream.Stream#map(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+stream java.util.Collection#stream()Ljava/util/stream/Stream;

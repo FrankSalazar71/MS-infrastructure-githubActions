@@ -1,0 +1,18 @@
+pe.edu.vallegrande.ms_infraestructura.application.config.CorsConfig#corsFilter()Lorg/springframework/web/filter/CorsFilter;
+false
+2da05154890b9e83bc0ac6d74ea03bd8
+java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;
+org.springframework.web.cors.CorsConfiguration#<init>()V
+org.springframework.web.cors.CorsConfiguration#instance-init#
+org.springframework.web.cors.UrlBasedCorsConfigurationSource#<init>()V
+org.springframework.web.cors.UrlBasedCorsConfigurationSource#instance-init#
+org.springframework.web.filter.CorsFilter#<init>(Lorg/springframework/web/cors/CorsConfigurationSource;)V
+org.springframework.web.filter.CorsFilter#instance-init#
+==
+registerCorsConfiguration org.springframework.web.cors.UrlBasedCorsConfigurationSource#registerCorsConfiguration(Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;)V
+setAllowCredentials org.springframework.web.cors.CorsConfiguration#setAllowCredentials(Ljava/lang/Boolean;)V
+setAllowedHeaders org.springframework.web.cors.CorsConfiguration#setAllowedHeaders(Ljava/util/List;)V
+setAllowedMethods org.springframework.web.cors.CorsConfiguration#setAllowedMethods(Ljava/util/List;)V
+setAllowedOriginPatterns org.springframework.web.cors.CorsConfiguration#setAllowedOriginPatterns(Ljava/util/List;)Lorg/springframework/web/cors/CorsConfiguration;
+setExposedHeaders org.springframework.web.cors.CorsConfiguration#setExposedHeaders(Ljava/util/List;)V
+setMaxAge org.springframework.web.cors.CorsConfiguration#setMaxAge(Ljava/lang/Long;)V

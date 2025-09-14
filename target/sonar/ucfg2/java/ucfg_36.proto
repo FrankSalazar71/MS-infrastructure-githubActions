@@ -1,0 +1,143 @@
+
+Ápe.edu.vallegrande.ms_infraestructura.infrastructure.rest.superAdmin.SuperAdminRest#createTransfer(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxTransferRequest;)Lorg/springframework/http/ResponseEntity;Â
+⁄C:/Users/frank/Desktop/Carpeta General/microservicio-infrastructure-actualizado/microservicios/vg-ms-infrastructure/src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/rest/superAdmin/SuperAdminRest.java|4 |(B"startingBlock*é
+startingBlock|B |(wº
+π
+
+__unknown_file (
+%5"__id*ê
+
+__unknown_file (t*r
+c
+requestXpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest"
+	documents¡
+æ
+
+__unknown_file (
+%6"__id*ï
+
+__unknown_file (y*w
+c
+requestXpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest"
+transferReason|
+z
+|C |(I
+%7"
+__annotate*8
+
+__unknown_file (
+jakarta.validation.Valid*"
+
+__unknown_file (
+
+%6ò
+ï
+|J |(V
+%8"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*"
+
+__unknown_file (
+
+%6‹
+Ÿ
+|o |(vw
+c
+requestXpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest"
+transferReason"__annotation*"
+
+__unknown_file (
+
+%7*"
+
+__unknown_file (
+
+%8|
+z
+|C |(I
+%9"
+__annotate*8
+
+__unknown_file (
+jakarta.validation.Valid*"
+
+__unknown_file (
+
+%5ô
+ñ
+|J |(V
+%10"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*"
+
+__unknown_file (
+
+%5ÿ
+’
+|o |(vr
+c
+requestXpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest"
+	documents"__annotation*"
+
+__unknown_file (
+
+%9*#
+
+__unknown_file (
+
+%10*
+1*¨
+1} }(a
+_
+}% }(7)
+%0#org.springframework.http.HttpStatus"__id*"
+
+__unknown_file (
+""Î
+Ë
+} }(89
+%13org.springframework.http.ResponseEntity$BodyBuilder"éorg.springframework.http.ResponseEntity#status(Lorg/springframework/http/HttpStatusCode;)Lorg/springframework/http/ResponseEntity$BodyBuilder;*G
+
+__unknown_file (+")
+'org.springframework.http.ResponseEntity*G
+
+__unknown_file (+
+)
+%0#org.springframework.http.HttpStatusÅ
+˛
+}> }(UY
+%2Spe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService"__id*ê
+
+__unknown_file (t*rU
+Spe.edu.vallegrande.ms_infraestructura.infrastructure.rest.superAdmin.SuperAdminRest"
+waterBoxTransferService·ﬁ
+}> }(c`
+%3Zpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxTransferResponse"êpe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService#save(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxTransferRequest;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxTransferResponse;*w
+
+__unknown_file ([
+Y
+%2Spe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService*Å
+
+__unknown_file (e
+c
+requestXpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest2`save(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxTransferRequest;)¶£
+} }(d-
+%4'org.springframework.http.ResponseEntity"uorg.springframework.http.ResponseEntity$BodyBuilder#body(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;*W
+
+__unknown_file (;
+9
+%13org.springframework.http.ResponseEntity$BodyBuilder*~
+
+__unknown_file (b
+`
+%3Zpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxTransferResponse2body(Ljava/lang/Object;)";
+} }(e/
+-
+%4'org.springframework.http.ResponseEntity:o
+|C |(vc
+requestXpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequestBWU
+Spe.edu.vallegrande.ms_infraestructura.infrastructure.rest.superAdmin.SuperAdminRestH

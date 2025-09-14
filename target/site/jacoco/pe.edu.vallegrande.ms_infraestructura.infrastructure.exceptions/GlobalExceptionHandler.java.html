@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GlobalExceptionHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ms_infraestructura</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions</a> &gt; <span class="el_source">GlobalExceptionHandler.java</span></div><h1>GlobalExceptionHandler.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.context.request.WebRequest;
+
+import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
+
+@ControllerAdvice
+<span class="fc" id="L15">public class GlobalExceptionHandler {</span>
+
+    @ExceptionHandler(NotFoundException.class)
+    public ResponseEntity&lt;ErrorDetails&gt; handleNotFoundException(NotFoundException ex, WebRequest request) {
+<span class="nc" id="L19">        ErrorDetails errorDetails = new ErrorDetails(</span>
+<span class="nc" id="L20">                LocalDateTime.now(),</span>
+<span class="nc" id="L21">                ex.getMessage(),</span>
+<span class="nc" id="L22">                request.getDescription(false),</span>
+<span class="nc" id="L23">                HttpStatus.NOT_FOUND.value()</span>
+        );
+<span class="nc" id="L25">        return new ResponseEntity&lt;&gt;(errorDetails, HttpStatus.NOT_FOUND);</span>
+    }
+
+    @ExceptionHandler(BadRequestException.class)
+    public ResponseEntity&lt;ErrorDetails&gt; handleBadRequestException(BadRequestException ex, WebRequest request) {
+<span class="nc" id="L30">        ErrorDetails errorDetails = new ErrorDetails(</span>
+<span class="nc" id="L31">                LocalDateTime.now(),</span>
+<span class="nc" id="L32">                ex.getMessage(),</span>
+<span class="nc" id="L33">                request.getDescription(false),</span>
+<span class="nc" id="L34">                HttpStatus.BAD_REQUEST.value()</span>
+        );
+<span class="nc" id="L36">        return new ResponseEntity&lt;&gt;(errorDetails, HttpStatus.BAD_REQUEST);</span>
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity&lt;Object&gt; handleMethodArgumentNotValid(MethodArgumentNotValidException ex, WebRequest request) {
+<span class="nc" id="L41">        Map&lt;String, String&gt; errors = new HashMap&lt;&gt;();</span>
+<span class="nc" id="L42">        ex.getBindingResult().getFieldErrors().forEach(error -&gt;</span>
+<span class="nc" id="L43">                errors.put(error.getField(), error.getDefaultMessage()));</span>
+
+<span class="nc" id="L45">        ErrorDetails errorDetails = new ErrorDetails(</span>
+<span class="nc" id="L46">                LocalDateTime.now(),</span>
+                &quot;Errores de validación&quot;,
+<span class="nc" id="L48">                request.getDescription(false),</span>
+<span class="nc" id="L49">                HttpStatus.BAD_REQUEST.value(),</span>
+                errors
+        );
+<span class="nc" id="L52">        return new ResponseEntity&lt;&gt;(errorDetails, HttpStatus.BAD_REQUEST);</span>
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity&lt;ErrorDetails&gt; handleGlobalException(Exception ex, WebRequest request) {
+        // Excluir rutas de Swagger/OpenAPI del manejo global de excepciones
+<span class="nc" id="L58">        String requestUri = request.getDescription(false);</span>
+<span class="nc bnc" id="L59" title="All 4 branches missed.">        if (requestUri.contains(&quot;/v3/api-docs&quot;) || requestUri.contains(&quot;/swagger-ui&quot;)) {</span>
+<span class="nc" id="L60">            throw new RuntimeException(ex); // Re-lanzar la excepción para que Swagger la maneje</span>
+        }
+
+<span class="nc" id="L63">        ErrorDetails errorDetails = new ErrorDetails(</span>
+<span class="nc" id="L64">                LocalDateTime.now(),</span>
+<span class="nc" id="L65">                &quot;Ocurrió un error inesperado: &quot; + ex.getMessage(),</span>
+<span class="nc" id="L66">                request.getDescription(false),</span>
+<span class="nc" id="L67">                HttpStatus.INTERNAL_SERVER_ERROR.value()</span>
+        );
+<span class="nc" id="L69">        return new ResponseEntity&lt;&gt;(errorDetails, HttpStatus.INTERNAL_SERVER_ERROR);</span>
+    }
+
+    // Clase interna para detalles del error
+    private static class ErrorDetails {
+        private LocalDateTime timestamp;
+        private String message;
+        private String details;
+        private int status;
+        private Map&lt;String, String&gt; validationErrors;
+
+<span class="nc" id="L80">        public ErrorDetails(LocalDateTime timestamp, String message, String details, int status) {</span>
+<span class="nc" id="L81">            this.timestamp = timestamp;</span>
+<span class="nc" id="L82">            this.message = message;</span>
+<span class="nc" id="L83">            this.details = details;</span>
+<span class="nc" id="L84">            this.status = status;</span>
+<span class="nc" id="L85">        }</span>
+
+<span class="nc" id="L87">        public ErrorDetails(LocalDateTime timestamp, String message, String details, int status, Map&lt;String, String&gt; validationErrors) {</span>
+<span class="nc" id="L88">            this.timestamp = timestamp;</span>
+<span class="nc" id="L89">            this.message = message;</span>
+<span class="nc" id="L90">            this.details = details;</span>
+<span class="nc" id="L91">            this.status = status;</span>
+<span class="nc" id="L92">            this.validationErrors = validationErrors;</span>
+<span class="nc" id="L93">        }</span>
+
+<span class="nc" id="L95">        public LocalDateTime getTimestamp() { return timestamp; }</span>
+<span class="nc" id="L96">        public String getMessage() { return message; }</span>
+<span class="nc" id="L97">        public String getDetails() { return details; }</span>
+<span class="nc" id="L98">        public int getStatus() { return status; }</span>
+<span class="nc" id="L99">        public Map&lt;String, String&gt; getValidationErrors() { return validationErrors; }</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

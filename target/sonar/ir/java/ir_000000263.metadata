@@ -1,0 +1,16 @@
+pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.GlobalExceptionHandler#handleMethodArgumentNotValid(Lorg/springframework/web/bind/MethodArgumentNotValidException;Lorg/springframework/web/context/request/WebRequest;)Lorg/springframework/http/ResponseEntity;
+false
+cfffe002a3fd7bac225c107c1ac87525
+java.time.LocalDateTime#now()Ljava/time/LocalDateTime;
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+org.springframework.http.HttpStatus#value()I
+org.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatusCode;)V
+org.springframework.http.ResponseEntity#instance-init#
+org.springframework.validation.BindException#getBindingResult()Lorg/springframework/validation/BindingResult;
+pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.GlobalExceptionHandler$ErrorDetails#<init>(Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;ILjava/util/Map;)V
+pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.GlobalExceptionHandler$ErrorDetails#instance-init#
+==
+forEach java.lang.Iterable#forEach(Ljava/util/function/Consumer;)V
+getDescription org.springframework.web.context.request.WebRequest#getDescription(Z)Ljava/lang/String;
+getFieldErrors org.springframework.validation.Errors#getFieldErrors()Ljava/util/List;

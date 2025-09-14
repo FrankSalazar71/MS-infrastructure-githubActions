@@ -1,0 +1,4 @@
+pe.edu.vallegrande.ms_infraestructura.MsInfraestructuraApplication#main([Ljava/lang/String;)V
+false
+f40dc5c8a8dc6df5f0f6cb3cfa7c02a8
+org.springframework.boot.SpringApplication#run(Ljava/lang/Class;[Ljava/lang/String;)Lorg/springframework/context/ConfigurableApplicationContext;

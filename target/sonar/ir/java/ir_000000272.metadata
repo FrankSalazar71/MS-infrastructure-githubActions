@@ -1,0 +1,4 @@
+pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.StringListConverter#convertToDatabaseColumn(Ljava/util/List;)Ljava/lang/String;
+false
+958daa50c1601ed40f979f45bc2270dc
+java.lang.String#join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;

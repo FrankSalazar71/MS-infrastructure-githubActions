@@ -1,0 +1,7 @@
+pe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxTransferService#getById(Ljava/lang/Long;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxTransferResponse;
+false
+161d4b6efc0046717c358950a81e57b0
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+pe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxTransferService#toResponse(Lpe/edu/vallegrande/ms_infraestructura/domain/models/WaterBoxTransfer;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxTransferResponse;
+==
+findById org.springframework.data.repository.CrudRepository#findById(Ljava/lang/Object;)Ljava/util/Optional;

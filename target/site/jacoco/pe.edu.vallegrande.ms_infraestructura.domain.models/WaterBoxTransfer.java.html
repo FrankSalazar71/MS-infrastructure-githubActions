@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WaterBoxTransfer.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ms_infraestructura</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.ms_infraestructura.domain.models</a> &gt; <span class="el_source">WaterBoxTransfer.java</span></div><h1>WaterBoxTransfer.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.ms_infraestructura.domain.models;
+
+import jakarta.persistence.*;
+import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+
+import java.time.LocalDateTime;
+import java.util.List;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.StringListConverter;
+
+@Entity
+@Table(name = &quot;water_box_transfers&quot;)
+@Getter
+<span class="nc" id="L16">@Setter</span>
+<span class="fc" id="L17">@NoArgsConstructor</span>
+<span class="nc" id="L18">@AllArgsConstructor</span>
+<span class="nc" id="L19">@Builder</span>
+@EntityListeners(AuditingEntityListener.class)
+public class WaterBoxTransfer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Autoincremental
+    @Column(name = &quot;id&quot;, updatable = false, nullable = false)
+<span class="nc" id="L25">    private Long id; // ID numérico</span>
+
+    @Column(name = &quot;water_box_id&quot;, nullable = false)
+<span class="nc" id="L28">    private Long waterBoxId; // ID numérico de la WaterBox</span>
+
+    @Column(name = &quot;old_assignment_id&quot;, nullable = false)
+<span class="nc" id="L31">    private Long oldAssignmentId; // ID numérico de la asignación anterior</span>
+
+    @Column(name = &quot;new_assignment_id&quot;, nullable = false)
+<span class="nc" id="L34">    private Long newAssignmentId; // ID numérico de la nueva asignación</span>
+
+    @Column(name = &quot;transfer_reason&quot;, nullable = false, length = 255)
+<span class="nc" id="L37">    private String transferReason;</span>
+
+    @Column(name = &quot;documents&quot;, columnDefinition = &quot;text&quot;) // Usamos TEXT para almacenar la lista como String
+    @Convert(converter = StringListConverter.class)
+<span class="nc" id="L41">    private List&lt;String&gt; documents; // Almacenamos como String directamente</span>
+
+    @CreatedDate
+    @Column(name = &quot;created_at&quot;, nullable = false, updatable = false)
+<span class="nc" id="L45">    private LocalDateTime createdAt;</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data flavor="com.sonarsource.architecture.export.java" version="1.0.0" site="https://www.sonarsource.com/">
+  <modules>
+    <module id="700518240" type="folder" name="&lt;externals&gt;" fat="146">
+      <submodule id="1343635808" type="folder" name="jakarta" fat="24">
+        <submodule id="1581160273" type="folder" name="persistence" fat="16">
+          <submodule id="-614351929" type="unknown" name="Table" fat="1" />
+          <submodule id="-1379687009" type="unknown" name="Enumerated" fat="1" />
+          <submodule id="-1185607388" type="unknown" name="EnumType" fat="2">
+            <submodule id="-264413295" type="unknown" name="STRING" fat="1" />
+          </submodule>
+          <submodule id="-316263573" type="folder" name="GenerationType" fat="2">
+            <submodule id="1573566107" type="unknown" name="IDENTITY" fat="1" />
+          </submodule>
+          <submodule id="-2049947774" type="unknown" name="Convert" fat="1" />
+          <submodule id="1557661245" type="unknown" name="GeneratedValue" fat="1" />
+          <submodule id="1153728420" type="unknown" name="Id" fat="1" />
+          <submodule id="-815827731" type="unknown" name="GenerationType" fat="1" />
+          <submodule id="205439035" type="unknown" name="AttributeConverter" fat="1" />
+          <submodule id="1563198812" type="unknown" name="Entity" fat="1" />
+          <submodule id="-353426311" type="unknown" name="EntityListeners" fat="1" />
+          <submodule id="-812130679" type="unknown" name="Column" fat="1" />
+          <submodule id="-1092870091" type="unknown" name="Converter" fat="1" />
+        </submodule>
+        <submodule id="1348270627" type="folder" name="validation" fat="7">
+          <submodule id="374036971" type="folder" name="constraints" fat="5">
+            <submodule id="-710818856" type="unknown" name="Size" fat="1" />
+            <submodule id="-501973247" type="unknown" name="NotNull" fat="1" />
+            <submodule id="-508743848" type="unknown" name="DecimalMin" fat="1" />
+            <submodule id="-638457320" type="unknown" name="NotBlank" fat="1" />
+          </submodule>
+          <submodule id="-889510713" type="unknown" name="Valid" fat="1" />
+        </submodule>
+      </submodule>
+      <submodule id="-1997467566" type="folder" name="org" fat="93">
+        <submodule id="-521711947" type="folder" name="springframework" fat="92">
+          <submodule id="1566712603" type="folder" name="web" fat="32">
+            <submodule id="-1397122292" type="folder" name="bind" fat="15">
+              <submodule id="-1832362195" type="folder" name="annotation" fat="13">
+                <submodule id="1197666952" type="unknown" name="ResponseStatus" fat="1" />
+                <submodule id="-1258343189" type="unknown" name="PostMapping" fat="1" />
+                <submodule id="986269384" type="unknown" name="RequestBody" fat="1" />
+                <submodule id="-1350965497" type="unknown" name="ControllerAdvice" fat="1" />
+                <submodule id="-781217034" type="unknown" name="DeleteMapping" fat="1" />
+                <submodule id="727975260" type="unknown" name="RequestMapping" fat="1" />
+                <submodule id="2141836181" type="unknown" name="PatchMapping" fat="1" />
+                <submodule id="736983651" type="unknown" name="GetMapping" fat="1" />
+                <submodule id="453256796" type="unknown" name="PutMapping" fat="1" />
+                <submodule id="-618395424" type="unknown" name="ExceptionHandler" fat="1" />
+                <submodule id="2089652442" type="unknown" name="PathVariable" fat="1" />
+                <submodule id="-1417313045" type="unknown" name="RestController" fat="1" />
+              </submodule>
+              <submodule id="323902450" type="unknown" name="MethodArgumentNotValidException" fat="1" />
+            </submodule>
+            <submodule id="-744500612" type="folder" name="cors" fat="10">
+              <submodule id="438149042" type="unknown" name="CorsConfiguration#setExposedHeaders(Ljava/util/List;)V" fat="1" />
+              <submodule id="338522454" type="unknown" name="CorsConfiguration#setAllowedMethods(Ljava/util/List;)V" fat="1" />
+              <submodule id="1314467370" type="unknown" name="UrlBasedCorsConfigurationSource" fat="1" />
+              <submodule id="1605269431" type="unknown" name="CorsConfiguration#setAllowCredentials(Ljava/lang/Boolean;)V" fat="1" />
+              <submodule id="412684461" type="unknown" name="CorsConfiguration#setAllowedOriginPatterns(Ljava/util/List;)Lorg/springframework/web/cors/CorsConfiguration;" fat="1" />
+              <submodule id="-1655917526" type="unknown" name="CorsConfiguration#setAllowedHeaders(Ljava/util/List;)V" fat="1" />
+              <submodule id="-958419318" type="unknown" name="UrlBasedCorsConfigurationSource#registerCorsConfiguration(Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;)V" fat="1" />
+              <submodule id="-494379167" type="unknown" name="CorsConfiguration" fat="1" />
+              <submodule id="1363931929" type="unknown" name="CorsConfiguration#setMaxAge(Ljava/lang/Long;)V" fat="1" />
+            </submodule>
+            <submodule id="1379096348" type="folder" name="context" fat="4">
+              <submodule id="-1188851971" type="folder" name="request" fat="3">
+                <submodule id="-1580616496" type="unknown" name="WebRequest" fat="1" />
+                <submodule id="-835918760" type="unknown" name="WebRequest#getDescription(Z)Ljava/lang/String;" fat="1" />
+              </submodule>
+            </submodule>
+            <submodule id="208414151" type="folder" name="filter" fat="2">
+              <submodule id="-1990764432" type="unknown" name="CorsFilter" fat="1" />
+            </submodule>
+          </submodule>
+          <submodule id="1447933358" type="folder" name="validation" fat="8">
+            <submodule id="-822091215" type="unknown" name="Errors" fat="1" />
+            <submodule id="1641026438" type="unknown" name="BindException" fat="1" />
+            <submodule id="-1681397234" type="unknown" name="FieldError" fat="1" />
+            <submodule id="1086348308" type="unknown" name="FieldError#getField()Ljava/lang/String;" fat="1" />
+            <submodule id="-1478292714" type="unknown" name="BindingResult" fat="1" />
+            <submodule id="336480484" type="unknown" name="BindException#getBindingResult()Lorg/springframework/validation/BindingResult;" fat="1" />
+            <submodule id="1214823007" type="unknown" name="Errors#getFieldErrors()Ljava/util/List;" fat="1" />
+          </submodule>
+          <submodule id="310732127" type="folder" name="data" fat="17">
+            <submodule id="125706965" type="folder" name="repository" fat="6">
+              <submodule id="-1857395642" type="unknown" name="ListCrudRepository#findAll()Ljava/util/List;" fat="1" />
+              <submodule id="-1220260232" type="unknown" name="CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;" fat="1" />
+              <submodule id="1711733885" type="unknown" name="ListCrudRepository" fat="1" />
+              <submodule id="716548119" type="unknown" name="CrudRepository#findById(Ljava/lang/Object;)Ljava/util/Optional;" fat="1" />
+              <submodule id="-1712897285" type="unknown" name="CrudRepository" fat="1" />
+            </submodule>
+            <submodule id="-1985092596" type="folder" name="jpa" fat="8">
+              <submodule id="-1446533624" type="folder" name="repository" fat="4">
+                <submodule id="90384004" type="folder" name="config" fat="2">
+                  <submodule id="-1840585149" type="unknown" name="EnableJpaAuditing" fat="1" />
+                </submodule>
+                <submodule id="-1943732327" type="unknown" name="JpaRepository" fat="1" />
+              </submodule>
+              <submodule id="1602061314" type="folder" name="domain" fat="3">
+                <submodule id="1192366883" type="folder" name="support" fat="2">
+                  <submodule id="-312006413" type="unknown" name="AuditingEntityListener" fat="1" />
+                </submodule>
+              </submodule>
+            </submodule>
+            <submodule id="-617417990" type="folder" name="annotation" fat="2">
+              <submodule id="1313349270" type="unknown" name="CreatedDate" fat="1" />
+            </submodule>
+          </submodule>
+          <submodule id="727784103" type="folder" name="boot" fat="5">
+            <submodule id="1497548487" type="unknown" name="SpringApplication#run(Ljava/lang/Class;[Ljava/lang/String;)Lorg/springframework/context/ConfigurableApplicationContext;" fat="1" />
+            <submodule id="432280784" type="folder" name="autoconfigure" fat="2">
+              <submodule id="-2068201819" type="unknown" name="SpringBootApplication" fat="1" />
+            </submodule>
+            <submodule id="838809948" type="unknown" name="SpringApplication" fat="1" />
+          </submodule>
+          <submodule id="-29564995" type="folder" name="http" fat="15">
+            <submodule id="-441920847" type="unknown" name="HttpStatus" fat="5">
+              <submodule id="-1570089065" type="unknown" name="CREATED" fat="1" />
+              <submodule id="-1898894671" type="unknown" name="INTERNAL_SERVER_ERROR" fat="1" />
+              <submodule id="-1850030455" type="unknown" name="NOT_FOUND" fat="1" />
+              <submodule id="1421623082" type="unknown" name="BAD_REQUEST" fat="1" />
+            </submodule>
+            <submodule id="-610555977" type="unknown" name="ResponseEntity#status(Lorg/springframework/http/HttpStatusCode;)Lorg/springframework/http/ResponseEntity$BodyBuilder;" fat="1" />
+            <submodule id="-924574201" type="unknown" name="ResponseEntity" fat="1" />
+            <submodule id="372192294" type="unknown" name="ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;" fat="1" />
+            <submodule id="848205577" type="unknown" name="HttpStatus#value()I" fat="1" />
+            <submodule id="-550998956" type="unknown" name="ResponseEntity$HeadersBuilder" fat="1" />
+            <submodule id="-1576473545" type="unknown" name="ResponseEntity$BodyBuilder#body(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;" fat="1" />
+            <submodule id="1994760551" type="unknown" name="ResponseEntity$HeadersBuilder#build()Lorg/springframework/http/ResponseEntity;" fat="1" />
+            <submodule id="1381676633" type="unknown" name="ResponseEntity#noContent()Lorg/springframework/http/ResponseEntity$HeadersBuilder;" fat="1" />
+            <submodule id="1690682386" type="unknown" name="ResponseEntity$BodyBuilder" fat="1" />
+          </submodule>
+          <submodule id="814237878" type="folder" name="context" fat="8">
+            <submodule id="1794335555" type="folder" name="annotation" fat="3">
+              <submodule id="1377614957" type="unknown" name="Configuration" fat="1" />
+              <submodule id="-882277215" type="unknown" name="Bean" fat="1" />
+            </submodule>
+            <submodule id="322364375" type="folder" name="support" fat="3">
+              <submodule id="61638161" type="unknown" name="DefaultMessageSourceResolvable" fat="1" />
+              <submodule id="1572303693" type="unknown" name="DefaultMessageSourceResolvable#getDefaultMessage()Ljava/lang/String;" fat="1" />
+            </submodule>
+            <submodule id="-1749699412" type="unknown" name="ConfigurableApplicationContext" fat="1" />
+          </submodule>
+          <submodule id="1973187109" type="folder" name="transaction" fat="3">
+            <submodule id="-1159573900" type="folder" name="annotation" fat="2">
+              <submodule id="-1347730647" type="unknown" name="Transactional" fat="1" />
+            </submodule>
+          </submodule>
+          <submodule id="-1901123161" type="folder" name="stereotype" fat="3">
+            <submodule id="-1123645782" type="unknown" name="Service" fat="1" />
+            <submodule id="-683193621" type="unknown" name="Repository" fat="1" />
+          </submodule>
+        </submodule>
+      </submodule>
+      <submodule id="1066153236" type="folder" name="io" fat="21">
+        <submodule id="1673016240" type="folder" name="swagger" fat="20">
+          <submodule id="497620183" type="folder" name="v3" fat="19">
+            <submodule id="2068958218" type="folder" name="oas" fat="18">
+              <submodule id="1631617898" type="folder" name="models" fat="17">
+                <submodule id="1440316366" type="folder" name="info" fat="14">
+                  <submodule id="1967107144" type="unknown" name="License#name(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/License;" fat="1" />
+                  <submodule id="1160162580" type="unknown" name="Info#license(Lio/swagger/v3/oas/models/info/License;)Lio/swagger/v3/oas/models/info/Info;" fat="1" />
+                  <submodule id="945263887" type="unknown" name="Info#title(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Info;" fat="1" />
+                  <submodule id="-1234371026" type="unknown" name="Info" fat="1" />
+                  <submodule id="-2128579432" type="unknown" name="Contact" fat="1" />
+                  <submodule id="-1373043505" type="unknown" name="Info#version(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Info;" fat="1" />
+                  <submodule id="519523828" type="unknown" name="Info#contact(Lio/swagger/v3/oas/models/info/Contact;)Lio/swagger/v3/oas/models/info/Info;" fat="1" />
+                  <submodule id="41421928" type="unknown" name="Contact#name(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Contact;" fat="1" />
+                  <submodule id="10156620" type="unknown" name="License#url(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/License;" fat="1" />
+                  <submodule id="1654775127" type="unknown" name="License" fat="1" />
+                  <submodule id="-1318230281" type="unknown" name="Contact#email(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Contact;" fat="1" />
+                  <submodule id="194760650" type="unknown" name="Contact#url(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Contact;" fat="1" />
+                  <submodule id="1308560811" type="unknown" name="Info#description(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Info;" fat="1" />
+                </submodule>
+                <submodule id="-506864329" type="unknown" name="OpenAPI#info(Lio/swagger/v3/oas/models/info/Info;)Lio/swagger/v3/oas/models/OpenAPI;" fat="1" />
+                <submodule id="-39138516" type="unknown" name="OpenAPI" fat="1" />
+              </submodule>
+            </submodule>
+          </submodule>
+        </submodule>
+      </submodule>
+      <submodule id="1858945954" type="folder" name="lombok" fat="7">
+        <submodule id="1250402153" type="unknown" name="Builder" fat="1" />
+        <submodule id="-1579221871" type="unknown" name="Setter" fat="1" />
+        <submodule id="474364040" type="unknown" name="NoArgsConstructor" fat="1" />
+        <submodule id="1941614213" type="unknown" name="Getter" fat="1" />
+        <submodule id="243245158" type="unknown" name="RequiredArgsConstructor" fat="1" />
+        <submodule id="1699959412" type="unknown" name="AllArgsConstructor" fat="1" />
+      </submodule>
+    </module>
+    <module id="1622591468" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/exceptions/NotFoundException.java" fat="3">
+      <submodule id="2072377711" type="exception" name="NotFoundException" fat="2">
+        <submodule id="1929902347" type="method" name="NotFoundException" fat="1" />
+      </submodule>
+    </module>
+    <module id="1047776782" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/application/services/IWaterBoxTransferService.java" fat="5">
+      <submodule id="259571451" type="interface" name="IWaterBoxTransferService" fat="4">
+        <submodule id="388758596" type="method" name="getById" fat="1" />
+        <submodule id="-224292829" type="method" name="getAll" fat="1" />
+        <submodule id="-1558505882" type="method" name="save" fat="1" />
+      </submodule>
+    </module>
+    <module id="-1334645712" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/domain/models/WaterBoxAssignment.java" fat="11">
+      <submodule id="-506573732" type="class" name="WaterBoxAssignment" fat="10">
+        <submodule id="1139430787" type="field" name="endDate" fat="1" />
+        <submodule id="1169206833" type="field" name="createdAt" fat="1" />
+        <submodule id="186266895" type="field" name="monthlyFee" fat="1" />
+        <submodule id="24445698" type="field" name="transferId" fat="1" />
+        <submodule id="1553480226" type="field" name="userId" fat="1" />
+        <submodule id="550233436" type="field" name="startDate" fat="1" />
+        <submodule id="-688667658" type="field" name="status" fat="1" />
+        <submodule id="708534125" type="field" name="id" fat="1" />
+        <submodule id="-930983527" type="field" name="waterBoxId" fat="1" />
+      </submodule>
+    </module>
+    <module id="1835495927" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxTransferRequest.java" fat="7">
+      <submodule id="1938774464" type="class" name="WaterBoxTransferRequest" fat="6">
+        <submodule id="-1384114968" type="field" name="newAssignmentId" fat="1" />
+        <submodule id="-248220651" type="field" name="transferReason" fat="1" />
+        <submodule id="-1302507720" type="field" name="documents" fat="1" />
+        <submodule id="1256963509" type="field" name="waterBoxId" fat="1" />
+        <submodule id="-1644769471" type="field" name="oldAssignmentId" fat="1" />
+      </submodule>
+    </module>
+    <module id="347454855" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/exceptions/BadRequestException.java" fat="3">
+      <submodule id="-1039634678" type="exception" name="BadRequestException" fat="2">
+        <submodule id="-1806141488" type="method" name="BadRequestException" fat="1" />
+      </submodule>
+    </module>
+    <module id="-240214893" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/domain/enums/Status.java" fat="6">
+      <submodule id="7904440" type="enum" name="Status" fat="5">
+        <submodule id="688011645" type="field" name="ACTIVE" fat="1" />
+        <submodule id="-2000178207" type="method" name="values" fat="1" />
+        <submodule id="1195833466" type="method" name="valueOf" fat="1" />
+        <submodule id="-560420616" type="field" name="INACTIVE" fat="1" />
+      </submodule>
+    </module>
+    <module id="-1833235011" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/domain/models/WaterBox.java" fat="10">
+      <submodule id="-1393812375" type="class" name="WaterBox" fat="9">
+        <submodule id="585544385" type="field" name="boxCode" fat="1" />
+        <submodule id="-437634547" type="field" name="organizationId" fat="1" />
+        <submodule id="-244870658" type="field" name="createdAt" fat="1" />
+        <submodule id="-941381965" type="field" name="installationDate" fat="1" />
+        <submodule id="562116440" type="field" name="currentAssignmentId" fat="1" />
+        <submodule id="-2063033964" type="field" name="boxType" fat="1" />
+        <submodule id="210860096" type="field" name="id" fat="1" />
+        <submodule id="-65324215" type="field" name="status" fat="1" />
+      </submodule>
+    </module>
+    <module id="565384195" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/application/services/IWaterBoxService.java" fat="9">
+      <submodule id="-713784080" type="interface" name="IWaterBoxService" fat="8">
+        <submodule id="-900779586" type="method" name="getAllActive" fat="1" />
+        <submodule id="142299249" type="method" name="save" fat="1" />
+        <submodule id="1317125790" type="method" name="update" fat="1" />
+        <submodule id="767245027" type="method" name="getAllInactive" fat="1" />
+        <submodule id="-349516832" type="method" name="restore" fat="1" />
+        <submodule id="142248496" type="method" name="delete" fat="1" />
+        <submodule id="-936198502" type="method" name="getById" fat="1" />
+      </submodule>
+    </module>
+    <module id="1013414343" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/application/config/OpenApiConfig.java" fat="3">
+      <submodule id="835051443" type="class" name="OpenApiConfig" fat="2">
+        <submodule id="-1072184235" type="method" name="customOpenAPI" fat="1" />
+      </submodule>
+    </module>
+    <module id="321659977" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/application/services/impl/WaterBoxService.java" fat="12">
+      <submodule id="-358866316" type="class" name="WaterBoxService" fat="11">
+        <submodule id="814380923" type="method" name="restore" fat="1" />
+        <submodule id="812132683" type="method" name="delete" fat="1" />
+        <submodule id="1440518244" type="method" name="toResponse" fat="1" />
+        <submodule id="-1875570254" type="field" name="waterBoxRepository" fat="1" />
+        <submodule id="-763813200" type="method" name="toEntity" fat="1" />
+        <submodule id="-443572874" type="method" name="save" fat="1" />
+        <submodule id="253741955" type="method" name="getAllActive" fat="1" />
+        <submodule id="227699253" type="method" name="getById" fat="1" />
+        <submodule id="-2134083736" type="method" name="getAllInactive" fat="1" />
+        <submodule id="-766462877" type="method" name="update" fat="1" />
+      </submodule>
+    </module>
+    <module id="-1128280814" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/domain/models/WaterBoxTransfer.java" fat="9">
+      <submodule id="-957723074" type="class" name="WaterBoxTransfer" fat="8">
+        <submodule id="1449111159" type="field" name="waterBoxId" fat="1" />
+        <submodule id="-832225901" type="field" name="createdAt" fat="1" />
+        <submodule id="-1736112193" type="field" name="oldAssignmentId" fat="1" />
+        <submodule id="1613184566" type="field" name="documents" fat="1" />
+        <submodule id="1272853463" type="field" name="transferReason" fat="1" />
+        <submodule id="-528844213" type="field" name="id" fat="1" />
+        <submodule id="-1475457690" type="field" name="newAssignmentId" fat="1" />
+      </submodule>
+    </module>
+    <module id="-963542396" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxResponse.java" fat="10">
+      <submodule id="1711427887" type="class" name="WaterBoxResponse" fat="9">
+        <submodule id="1680803652" type="field" name="createdAt" fat="1" />
+        <submodule id="1136872734" type="field" name="currentAssignmentId" fat="1" />
+        <submodule id="905388167" type="field" name="organizationId" fat="1" />
+        <submodule id="327891907" type="field" name="status" fat="1" />
+        <submodule id="1536731226" type="field" name="boxType" fat="1" />
+        <submodule id="-877083206" type="field" name="id" fat="1" />
+        <submodule id="1213257389" type="field" name="installationDate" fat="1" />
+        <submodule id="-109657721" type="field" name="boxCode" fat="1" />
+      </submodule>
+    </module>
+    <module id="-467122919" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxAssignmentRequest.java" fat="6">
+      <submodule id="1086921378" type="class" name="WaterBoxAssignmentRequest" fat="5">
+        <submodule id="1302729762" type="field" name="startDate" fat="1" />
+        <submodule id="2038816521" type="field" name="monthlyFee" fat="1" />
+        <submodule id="-1442057956" type="field" name="userId" fat="1" />
+        <submodule id="921566099" type="field" name="waterBoxId" fat="1" />
+      </submodule>
+    </module>
+    <module id="857385865" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/repository/WaterBoxTransferRepository.java" fat="2">
+      <submodule id="1897240054" type="interface" name="WaterBoxTransferRepository" fat="1" />
+    </module>
+    <module id="1212082924" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxRequest.java" fat="7">
+      <submodule id="-184450507" type="class" name="WaterBoxRequest" fat="6">
+        <submodule id="502989505" type="field" name="organizationId" fat="1" />
+        <submodule id="1055199847" type="field" name="installationDate" fat="1" />
+        <submodule id="-271204572" type="field" name="currentAssignmentId" fat="1" />
+        <submodule id="242316128" type="field" name="boxType" fat="1" />
+        <submodule id="-1404072819" type="field" name="boxCode" fat="1" />
+      </submodule>
+    </module>
+    <module id="1840092151" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse.java" fat="11">
+      <submodule id="-1924538014" type="class" name="WaterBoxAssignmentResponse" fat="10">
+        <submodule id="-1395510345" type="field" name="createdAt" fat="1" />
+        <submodule id="-2014483742" type="field" name="startDate" fat="1" />
+        <submodule id="1167162579" type="field" name="waterBoxId" fat="1" />
+        <submodule id="-862034777" type="field" name="id" fat="1" />
+        <submodule id="-2010554295" type="field" name="monthlyFee" fat="1" />
+        <submodule id="1596068444" type="field" name="userId" fat="1" />
+        <submodule id="-646079440" type="field" name="status" fat="1" />
+        <submodule id="-1835301751" type="field" name="endDate" fat="1" />
+        <submodule id="2122591804" type="field" name="transferId" fat="1" />
+      </submodule>
+    </module>
+    <module id="1124453945" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/rest/superAdmin/SuperAdminRest.java" fat="22">
+      <submodule id="-842611258" type="class" name="SuperAdminRest" fat="21">
+        <submodule id="-901096395" type="field" name="waterBoxService" fat="1" />
+        <submodule id="-1124366757" type="method" name="updateAssignment" fat="1" />
+        <submodule id="-359150687" type="method" name="getAllActiveWaterBoxes" fat="1" />
+        <submodule id="1664060724" type="method" name="deleteWaterBox" fat="1" />
+        <submodule id="1004343232" type="field" name="waterBoxTransferService" fat="1" />
+        <submodule id="1797456866" type="method" name="getTransferById" fat="1" />
+        <submodule id="2049076233" type="method" name="createTransfer" fat="1" />
+        <submodule id="-359931526" type="method" name="restoreAssignment" fat="1" />
+        <submodule id="224580665" type="method" name="getWaterBoxById" fat="1" />
+        <submodule id="277331840" type="method" name="getAssignmentById" fat="1" />
+        <submodule id="80090817" type="method" name="getAllActiveAssignments" fat="1" />
+        <submodule id="-1608649625" type="method" name="updateWaterBox" fat="1" />
+        <submodule id="-1540842679" type="method" name="createAssignment" fat="1" />
+        <submodule id="1010248249" type="method" name="getAllTransfers" fat="1" />
+        <submodule id="362383900" type="method" name="getAllInactiveWaterBoxes" fat="1" />
+        <submodule id="1302029755" type="method" name="deleteAssignment" fat="1" />
+        <submodule id="972826534" type="method" name="getAllInactiveAssignments" fat="1" />
+        <submodule id="1703389090" type="field" name="waterBoxAssignmentService" fat="1" />
+        <submodule id="-1296755691" type="method" name="createWaterBox" fat="1" />
+        <submodule id="1496968371" type="method" name="restoreWaterBox" fat="1" />
+      </submodule>
+    </module>
+    <module id="-575080217" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/repository/WaterBoxAssignmentRepository.java" fat="3">
+      <submodule id="1696621396" type="interface" name="WaterBoxAssignmentRepository" fat="2">
+        <submodule id="386443223" type="method" name="findByStatus" fat="1" />
+      </submodule>
+    </module>
+    <module id="-619314316" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/repository/WaterBoxRepository.java" fat="4">
+      <submodule id="-1205932575" type="interface" name="WaterBoxRepository" fat="3">
+        <submodule id="2093643434" type="method" name="findByStatus" fat="1" />
+        <submodule id="991633432" type="method" name="findByCurrentAssignmentId" fat="1" />
+      </submodule>
+    </module>
+    <module id="-1158992912" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/application/config/CorsConfig.java" fat="3">
+      <submodule id="-564742436" type="class" name="CorsConfig" fat="2">
+        <submodule id="-648071997" type="method" name="corsFilter" fat="1" />
+      </submodule>
+    </module>
+    <module id="-71928234" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/dto/StringListConverter.java" fat="5">
+      <submodule id="-1244199136" type="class" name="StringListConverter" fat="4">
+        <submodule id="-308620513" type="method" name="convertToEntityAttribute" fat="1" />
+        <submodule id="1422381001" type="field" name="SPLIT_CHAR" fat="1" />
+        <submodule id="-1670692593" type="method" name="convertToDatabaseColumn" fat="1" />
+      </submodule>
+    </module>
+    <module id="1346616047" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/service/OrganizationService.java" fat="3">
+      <submodule id="-397059911" type="class" name="OrganizationService" fat="2">
+        <submodule id="-890785032" type="method" name="processOrganizationData" fat="1" />
+      </submodule>
+    </module>
+    <module id="-1993020146" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/exceptions/GlobalExceptionHandler.java" fat="19">
+      <submodule id="820675770" type="class" name="GlobalExceptionHandler" fat="18">
+        <submodule id="-1755433256" type="class" name="ErrorDetails" fat="13">
+          <submodule id="-1122430172" type="method" name="getStatus" fat="1" />
+          <submodule id="-1819987565" type="method" name="getTimestamp" fat="1" />
+          <submodule id="-1746017772" type="method" name="getValidationErrors" fat="1" />
+          <submodule id="-1421275800" type="field" name="validationErrors" fat="1" />
+          <submodule id="868607457" type="field" name="message" fat="1" />
+          <submodule id="-1127169081" type="method" name="ErrorDetails" fat="1" />
+          <submodule id="-1231399430" type="field" name="status" fat="1" />
+          <submodule id="-2118245710" type="field" name="timestamp" fat="1" />
+          <submodule id="-1243116165" type="method" name="getDetails" fat="1" />
+          <submodule id="-714268538" type="field" name="details" fat="1" />
+          <submodule id="-1818557472" type="method" name="ErrorDetails" fat="1" />
+          <submodule id="-122339584" type="method" name="getMessage" fat="1" />
+        </submodule>
+        <submodule id="322650685" type="method" name="handleBadRequestException" fat="1" />
+        <submodule id="818907958" type="method" name="handleMethodArgumentNotValid" fat="1" />
+        <submodule id="1736181085" type="method" name="handleNotFoundException" fat="1" />
+        <submodule id="2054712208" type="method" name="handleGlobalException" fat="1" />
+      </submodule>
+    </module>
+    <module id="2032093337" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/rest/client/ClientRest.java" fat="13">
+      <submodule id="1617897638" type="class" name="ClientRest" fat="12">
+        <submodule id="-1517800830" type="field" name="waterBoxAssignmentService" fat="1" />
+        <submodule id="1697048345" type="method" name="getWaterBoxById" fat="1" />
+        <submodule id="-2020435360" type="method" name="getAssignmentById" fat="1" />
+        <submodule id="-1466892523" type="field" name="waterBoxService" fat="1" />
+        <submodule id="-717032644" type="method" name="getAllInactiveWaterBoxes" fat="1" />
+        <submodule id="1870652038" type="method" name="getAllInactiveAssignments" fat="1" />
+        <submodule id="2118308512" type="field" name="waterBoxTransferService" fat="1" />
+        <submodule id="-1025042750" type="method" name="getTransferById" fat="1" />
+        <submodule id="599460257" type="method" name="getAllActiveAssignments" fat="1" />
+        <submodule id="-1312228159" type="method" name="getAllActiveWaterBoxes" fat="1" />
+        <submodule id="1362951449" type="method" name="getAllTransfers" fat="1" />
+      </submodule>
+    </module>
+    <module id="2022914132" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/application/services/impl/WaterBoxTransferService.java" fat="10">
+      <submodule id="-1883667201" type="class" name="WaterBoxTransferService" fat="9">
+        <submodule id="212799967" type="method" name="getById" fat="1" />
+        <submodule id="-1378323974" type="field" name="waterBoxAssignmentRepository" fat="1" />
+        <submodule id="-1459765467" type="method" name="toEntity" fat="1" />
+        <submodule id="-1605770133" type="method" name="save" fat="1" />
+        <submodule id="-857221817" type="field" name="waterBoxRepository" fat="1" />
+        <submodule id="1169345704" type="method" name="getAll" fat="1" />
+        <submodule id="1094632207" type="method" name="toResponse" fat="1" />
+        <submodule id="-20686116" type="field" name="waterBoxTransferRepository" fat="1" />
+      </submodule>
+    </module>
+    <module id="2132972761" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxTransferResponse.java" fat="9">
+      <submodule id="454911748" type="class" name="WaterBoxTransferResponse" fat="8">
+        <submodule id="1995035781" type="field" name="oldAssignmentId" fat="1" />
+        <submodule id="-2039277012" type="field" name="newAssignmentId" fat="1" />
+        <submodule id="255032817" type="field" name="waterBoxId" fat="1" />
+        <submodule id="-364996740" type="field" name="documents" fat="1" />
+        <submodule id="-823544239" type="field" name="transferReason" fat="1" />
+        <submodule id="1185571781" type="field" name="id" fat="1" />
+        <submodule id="1484560089" type="field" name="createdAt" fat="1" />
+      </submodule>
+    </module>
+    <module id="-1445906960" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/application/services/IWaterBoxAssignmentService.java" fat="9">
+      <submodule id="702219997" type="interface" name="IWaterBoxAssignmentService" fat="8">
+        <submodule id="-200581104" type="method" name="getAllInactive" fat="1" />
+        <submodule id="-1307541120" type="method" name="getById" fat="1" />
+        <submodule id="-760926394" type="method" name="restore" fat="1" />
+        <submodule id="935603619" type="method" name="delete" fat="1" />
+        <submodule id="1226836292" type="method" name="save" fat="1" />
+        <submodule id="-863793743" type="method" name="update" fat="1" />
+        <submodule id="-1429160405" type="method" name="getAllActive" fat="1" />
+      </submodule>
+    </module>
+    <module id="-678042919" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/rest/admin/AdminRest.java" fat="12">
+      <submodule id="663357060" type="class" name="AdminRest" fat="11">
+        <submodule id="-1818205965" type="field" name="waterBoxService" fat="1" />
+        <submodule id="835187817" type="method" name="updateWaterBox" fat="1" />
+        <submodule id="-770180682" type="method" name="deleteWaterBox" fat="1" />
+        <submodule id="-1541752387" type="method" name="deleteAssignment" fat="1" />
+        <submodule id="2135354443" type="method" name="createAssignment" fat="1" />
+        <submodule id="1807316606" type="field" name="waterBoxTransferService" fat="1" />
+        <submodule id="266688224" type="field" name="waterBoxAssignmentService" fat="1" />
+        <submodule id="1267735" type="method" name="createWaterBox" fat="1" />
+        <submodule id="-55864483" type="method" name="updateAssignment" fat="1" />
+        <submodule id="-544895477" type="method" name="createTransfer" fat="1" />
+      </submodule>
+    </module>
+    <module id="-1843144082" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/domain/enums/BoxType.java" fat="7">
+      <submodule id="-1972210175" type="enum" name="BoxType" fat="6">
+        <submodule id="2058469520" type="field" name="CAÑO" fat="1" />
+        <submodule id="-446307350" type="field" name="OTRO" fat="1" />
+        <submodule id="-442662519" type="method" name="values" fat="1" />
+        <submodule id="-2082279383" type="field" name="BOMBA" fat="1" />
+        <submodule id="-1046564912" type="method" name="valueOf" fat="1" />
+      </submodule>
+    </module>
+    <module id="1125605231" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/MsInfraestructuraApplication.java" fat="3">
+      <submodule id="239984187" type="class" name="MsInfraestructuraApplication" fat="2">
+        <submodule id="2143740298" type="method" name="main" fat="1" />
+      </submodule>
+    </module>
+    <module id="-641784138" type="file" name="src/main/java/pe/edu/vallegrande/ms_infraestructura/application/services/impl/WaterBoxAssignmentService.java" fat="13">
+      <submodule id="-843321183" type="class" name="WaterBoxAssignmentService" fat="12">
+        <submodule id="1519549013" type="method" name="getAllInactive" fat="1" />
+        <submodule id="583971441" type="method" name="toResponse" fat="1" />
+        <submodule id="538345880" type="field" name="waterBoxAssignmentRepository" fat="1" />
+        <submodule id="-1263979931" type="field" name="waterBoxRepository" fat="1" />
+        <submodule id="-400985917" type="method" name="toEntity" fat="1" />
+        <submodule id="-627710210" type="method" name="delete" fat="1" />
+        <submodule id="2012970889" type="method" name="save" fat="1" />
+        <submodule id="2132672353" type="method" name="restore" fat="1" />
+        <submodule id="1586057627" type="method" name="getById" fat="1" />
+        <submodule id="312073398" type="method" name="update" fat="1" />
+        <submodule id="1853072816" type="method" name="getAllActive" fat="1" />
+      </submodule>
+    </module>
+  </modules>
+  <dependencies>
+    <dependency from="2072377711" to="1197666952" type="annotated by" />
+    <dependency from="2072377711" to="-441920847" type="uses" />
+    <dependency from="2072377711" to="-1850030455" type="references" />
+    <dependency from="1929902347" to="2072377711" type="calls" />
+    <dependency from="388758596" to="454911748" type="returns" />
+    <dependency from="-224292829" to="454911748" type="uses" />
+    <dependency from="-1558505882" to="454911748" type="returns" />
+    <dependency from="-1558505882" to="1938774464" type="has param" />
+    <dependency from="-506573732" to="1563198812" type="annotated by" />
+    <dependency from="-506573732" to="-614351929" type="annotated by" />
+    <dependency from="-506573732" to="1941614213" type="annotated by" />
+    <dependency from="-506573732" to="-1579221871" type="annotated by" />
+    <dependency from="-506573732" to="474364040" type="annotated by" />
+    <dependency from="-506573732" to="1699959412" type="annotated by" />
+    <dependency from="-506573732" to="1250402153" type="annotated by" />
+    <dependency from="-506573732" to="-353426311" type="annotated by" />
+    <dependency from="-506573732" to="-312006413" type="uses" />
+    <dependency from="1139430787" to="-812130679" type="annotated by" />
+    <dependency from="1169206833" to="1313349270" type="annotated by" />
+    <dependency from="1169206833" to="-812130679" type="annotated by" />
+    <dependency from="186266895" to="-812130679" type="annotated by" />
+    <dependency from="24445698" to="-812130679" type="annotated by" />
+    <dependency from="1553480226" to="-812130679" type="annotated by" />
+    <dependency from="550233436" to="-812130679" type="annotated by" />
+    <dependency from="-688667658" to="7904440" type="is type" />
+    <dependency from="-688667658" to="-1379687009" type="annotated by" />
+    <dependency from="-688667658" to="-1185607388" type="uses" />
+    <dependency from="-688667658" to="-264413295" type="references" />
+    <dependency from="-688667658" to="-812130679" type="annotated by" />
+    <dependency from="708534125" to="1153728420" type="annotated by" />
+    <dependency from="708534125" to="1557661245" type="annotated by" />
+    <dependency from="708534125" to="-815827731" type="uses" />
+    <dependency from="708534125" to="1573566107" type="references" />
+    <dependency from="708534125" to="-812130679" type="annotated by" />
+    <dependency from="-930983527" to="-812130679" type="annotated by" />
+    <dependency from="1938774464" to="1941614213" type="annotated by" />
+    <dependency from="1938774464" to="-1579221871" type="annotated by" />
+    <dependency from="1938774464" to="1250402153" type="annotated by" />
+    <dependency from="-1384114968" to="-501973247" type="annotated by" />
+    <dependency from="-248220651" to="-638457320" type="annotated by" />
+    <dependency from="-248220651" to="-710818856" type="annotated by" />
+    <dependency from="1256963509" to="-501973247" type="annotated by" />
+    <dependency from="-1644769471" to="-501973247" type="annotated by" />
+    <dependency from="-1039634678" to="1197666952" type="annotated by" />
+    <dependency from="-1039634678" to="-441920847" type="uses" />
+    <dependency from="-1039634678" to="1421623082" type="references" />
+    <dependency from="-1806141488" to="-1039634678" type="calls" />
+    <dependency from="688011645" to="7904440" type="calls" />
+    <dependency from="-560420616" to="7904440" type="calls" />
+    <dependency from="-1393812375" to="1563198812" type="annotated by" />
+    <dependency from="-1393812375" to="-614351929" type="annotated by" />
+    <dependency from="-1393812375" to="1941614213" type="annotated by" />
+    <dependency from="-1393812375" to="-1579221871" type="annotated by" />
+    <dependency from="-1393812375" to="474364040" type="annotated by" />
+    <dependency from="-1393812375" to="1699959412" type="annotated by" />
+    <dependency from="-1393812375" to="1250402153" type="annotated by" />
+    <dependency from="-1393812375" to="-353426311" type="annotated by" />
+    <dependency from="-1393812375" to="-312006413" type="uses" />
+    <dependency from="585544385" to="-812130679" type="annotated by" />
+    <dependency from="-437634547" to="-812130679" type="annotated by" />
+    <dependency from="-244870658" to="1313349270" type="annotated by" />
+    <dependency from="-244870658" to="-812130679" type="annotated by" />
+    <dependency from="-941381965" to="-812130679" type="annotated by" />
+    <dependency from="562116440" to="-812130679" type="annotated by" />
+    <dependency from="-2063033964" to="-1972210175" type="is type" />
+    <dependency from="-2063033964" to="-1379687009" type="annotated by" />
+    <dependency from="-2063033964" to="-1185607388" type="uses" />
+    <dependency from="-2063033964" to="-264413295" type="references" />
+    <dependency from="-2063033964" to="-812130679" type="annotated by" />
+    <dependency from="210860096" to="1153728420" type="annotated by" />
+    <dependency from="210860096" to="1557661245" type="annotated by" />
+    <dependency from="210860096" to="-815827731" type="uses" />
+    <dependency from="210860096" to="1573566107" type="references" />
+    <dependency from="210860096" to="-812130679" type="annotated by" />
+    <dependency from="-65324215" to="7904440" type="is type" />
+    <dependency from="-65324215" to="-1379687009" type="annotated by" />
+    <dependency from="-65324215" to="-1185607388" type="uses" />
+    <dependency from="-65324215" to="-264413295" type="references" />
+    <dependency from="-65324215" to="-812130679" type="annotated by" />
+    <dependency from="-900779586" to="1711427887" type="uses" />
+    <dependency from="142299249" to="1711427887" type="returns" />
+    <dependency from="142299249" to="-184450507" type="has param" />
+    <dependency from="1317125790" to="1711427887" type="returns" />
+    <dependency from="1317125790" to="-184450507" type="has param" />
+    <dependency from="767245027" to="1711427887" type="uses" />
+    <dependency from="-349516832" to="1711427887" type="returns" />
+    <dependency from="-936198502" to="1711427887" type="returns" />
+    <dependency from="835051443" to="1377614957" type="annotated by" />
+    <dependency from="-1072184235" to="-39138516" type="returns" />
+    <dependency from="-1072184235" to="-882277215" type="annotated by" />
+    <dependency from="-1072184235" to="-506864329" type="calls" />
+    <dependency from="-1072184235" to="-1234371026" type="returns" />
+    <dependency from="-1072184235" to="1160162580" type="calls" />
+    <dependency from="-1072184235" to="519523828" type="calls" />
+    <dependency from="-1072184235" to="-1373043505" type="calls" />
+    <dependency from="-1072184235" to="1308560811" type="calls" />
+    <dependency from="-1072184235" to="945263887" type="calls" />
+    <dependency from="-1072184235" to="-2128579432" type="returns" />
+    <dependency from="-1072184235" to="194760650" type="calls" />
+    <dependency from="-1072184235" to="-1318230281" type="calls" />
+    <dependency from="-1072184235" to="41421928" type="calls" />
+    <dependency from="-1072184235" to="1654775127" type="returns" />
+    <dependency from="-1072184235" to="10156620" type="calls" />
+    <dependency from="-1072184235" to="1967107144" type="calls" />
+    <dependency from="-358866316" to="-713784080" type="implements" />
+    <dependency from="-358866316" to="-1123645782" type="annotated by" />
+    <dependency from="-358866316" to="243245158" type="annotated by" />
+    <dependency from="814380923" to="1711427887" type="returns" />
+    <dependency from="814380923" to="-1347730647" type="annotated by" />
+    <dependency from="814380923" to="-1393812375" type="is type" />
+    <dependency from="814380923" to="-1712897285" type="references" />
+    <dependency from="814380923" to="716548119" type="calls" />
+    <dependency from="814380923" to="-1875570254" type="references" />
+    <dependency from="814380923" to="-1205932575" type="uses" />
+    <dependency from="814380923" to="2072377711" type="calls" />
+    <dependency from="814380923" to="7904440" type="uses" />
+    <dependency from="814380923" to="688011645" type="references" />
+    <dependency from="814380923" to="-1039634678" type="calls" />
+    <dependency from="814380923" to="-1220260232" type="calls" />
+    <dependency from="814380923" to="-358866316" type="references" />
+    <dependency from="814380923" to="1440518244" type="calls" />
+    <dependency from="812132683" to="-1347730647" type="annotated by" />
+    <dependency from="812132683" to="-1393812375" type="is type" />
+    <dependency from="812132683" to="-1712897285" type="references" />
+    <dependency from="812132683" to="716548119" type="calls" />
+    <dependency from="812132683" to="-1875570254" type="references" />
+    <dependency from="812132683" to="-1205932575" type="uses" />
+    <dependency from="812132683" to="2072377711" type="calls" />
+    <dependency from="812132683" to="7904440" type="uses" />
+    <dependency from="812132683" to="-560420616" type="references" />
+    <dependency from="812132683" to="-1039634678" type="calls" />
+    <dependency from="812132683" to="-1220260232" type="calls" />
+    <dependency from="1440518244" to="1711427887" type="returns" />
+    <dependency from="1440518244" to="-1393812375" type="has param" />
+    <dependency from="-1875570254" to="-1205932575" type="is type" />
+    <dependency from="-763813200" to="-1393812375" type="returns" />
+    <dependency from="-763813200" to="-184450507" type="has param" />
+    <dependency from="-443572874" to="1711427887" type="returns" />
+    <dependency from="-443572874" to="-184450507" type="has param" />
+    <dependency from="-443572874" to="-1347730647" type="annotated by" />
+    <dependency from="-443572874" to="-1393812375" type="is type" />
+    <dependency from="-443572874" to="-358866316" type="references" />
+    <dependency from="-443572874" to="-763813200" type="calls" />
+    <dependency from="-443572874" to="7904440" type="uses" />
+    <dependency from="-443572874" to="688011645" type="references" />
+    <dependency from="-443572874" to="-1712897285" type="references" />
+    <dependency from="-443572874" to="-1220260232" type="calls" />
+    <dependency from="-443572874" to="-1875570254" type="references" />
+    <dependency from="-443572874" to="-1205932575" type="uses" />
+    <dependency from="-443572874" to="1440518244" type="calls" />
+    <dependency from="253741955" to="-1347730647" type="annotated by" />
+    <dependency from="253741955" to="1711427887" type="uses" />
+    <dependency from="253741955" to="-1205932575" type="references" />
+    <dependency from="253741955" to="2093643434" type="calls" />
+    <dependency from="253741955" to="-1875570254" type="references" />
+    <dependency from="253741955" to="7904440" type="uses" />
+    <dependency from="253741955" to="688011645" type="references" />
+    <dependency from="253741955" to="-358866316" type="uses" />
+    <dependency from="227699253" to="1711427887" type="returns" />
+    <dependency from="227699253" to="-1347730647" type="annotated by" />
+    <dependency from="227699253" to="-1393812375" type="is type" />
+    <dependency from="227699253" to="-1712897285" type="references" />
+    <dependency from="227699253" to="716548119" type="calls" />
+    <dependency from="227699253" to="-1875570254" type="references" />
+    <dependency from="227699253" to="-1205932575" type="uses" />
+    <dependency from="227699253" to="2072377711" type="calls" />
+    <dependency from="227699253" to="-358866316" type="references" />
+    <dependency from="227699253" to="1440518244" type="calls" />
+    <dependency from="-2134083736" to="-1347730647" type="annotated by" />
+    <dependency from="-2134083736" to="1711427887" type="uses" />
+    <dependency from="-2134083736" to="-1205932575" type="references" />
+    <dependency from="-2134083736" to="2093643434" type="calls" />
+    <dependency from="-2134083736" to="-1875570254" type="references" />
+    <dependency from="-2134083736" to="7904440" type="uses" />
+    <dependency from="-2134083736" to="-560420616" type="references" />
+    <dependency from="-2134083736" to="-358866316" type="uses" />
+    <dependency from="-766462877" to="1711427887" type="returns" />
+    <dependency from="-766462877" to="-184450507" type="has param" />
+    <dependency from="-766462877" to="-1347730647" type="annotated by" />
+    <dependency from="-766462877" to="-1393812375" type="is type" />
+    <dependency from="-766462877" to="-1712897285" type="references" />
+    <dependency from="-766462877" to="716548119" type="calls" />
+    <dependency from="-766462877" to="-1875570254" type="references" />
+    <dependency from="-766462877" to="-1205932575" type="uses" />
+    <dependency from="-766462877" to="2072377711" type="calls" />
+    <dependency from="-766462877" to="-1220260232" type="calls" />
+    <dependency from="-766462877" to="-358866316" type="references" />
+    <dependency from="-766462877" to="1440518244" type="calls" />
+    <dependency from="-957723074" to="1563198812" type="annotated by" />
+    <dependency from="-957723074" to="-614351929" type="annotated by" />
+    <dependency from="-957723074" to="1941614213" type="annotated by" />
+    <dependency from="-957723074" to="-1579221871" type="annotated by" />
+    <dependency from="-957723074" to="474364040" type="annotated by" />
+    <dependency from="-957723074" to="1699959412" type="annotated by" />
+    <dependency from="-957723074" to="1250402153" type="annotated by" />
+    <dependency from="-957723074" to="-353426311" type="annotated by" />
+    <dependency from="-957723074" to="-312006413" type="uses" />
+    <dependency from="1449111159" to="-812130679" type="annotated by" />
+    <dependency from="-832225901" to="1313349270" type="annotated by" />
+    <dependency from="-832225901" to="-812130679" type="annotated by" />
+    <dependency from="-1736112193" to="-812130679" type="annotated by" />
+    <dependency from="1613184566" to="-812130679" type="annotated by" />
+    <dependency from="1613184566" to="-2049947774" type="annotated by" />
+    <dependency from="1613184566" to="-1244199136" type="uses" />
+    <dependency from="1272853463" to="-812130679" type="annotated by" />
+    <dependency from="-528844213" to="1153728420" type="annotated by" />
+    <dependency from="-528844213" to="1557661245" type="annotated by" />
+    <dependency from="-528844213" to="-815827731" type="uses" />
+    <dependency from="-528844213" to="1573566107" type="references" />
+    <dependency from="-528844213" to="-812130679" type="annotated by" />
+    <dependency from="-1475457690" to="-812130679" type="annotated by" />
+    <dependency from="1711427887" to="1941614213" type="annotated by" />
+    <dependency from="1711427887" to="-1579221871" type="annotated by" />
+    <dependency from="1711427887" to="1250402153" type="annotated by" />
+    <dependency from="327891907" to="7904440" type="is type" />
+    <dependency from="1536731226" to="-1972210175" type="is type" />
+    <dependency from="1086921378" to="1941614213" type="annotated by" />
+    <dependency from="1086921378" to="-1579221871" type="annotated by" />
+    <dependency from="1086921378" to="1250402153" type="annotated by" />
+    <dependency from="1302729762" to="-501973247" type="annotated by" />
+    <dependency from="2038816521" to="-501973247" type="annotated by" />
+    <dependency from="2038816521" to="-508743848" type="annotated by" />
+    <dependency from="-1442057956" to="-638457320" type="annotated by" />
+    <dependency from="921566099" to="-501973247" type="annotated by" />
+    <dependency from="1897240054" to="-1943732327" type="implements" />
+    <dependency from="1897240054" to="-683193621" type="annotated by" />
+    <dependency from="1897240054" to="-957723074" type="uses" />
+    <dependency from="-184450507" to="1941614213" type="annotated by" />
+    <dependency from="-184450507" to="-1579221871" type="annotated by" />
+    <dependency from="-184450507" to="1250402153" type="annotated by" />
+    <dependency from="502989505" to="-638457320" type="annotated by" />
+    <dependency from="1055199847" to="-501973247" type="annotated by" />
+    <dependency from="242316128" to="-1972210175" type="is type" />
+    <dependency from="242316128" to="-501973247" type="annotated by" />
+    <dependency from="-1404072819" to="-638457320" type="annotated by" />
+    <dependency from="-1404072819" to="-710818856" type="annotated by" />
+    <dependency from="-1924538014" to="1941614213" type="annotated by" />
+    <dependency from="-1924538014" to="-1579221871" type="annotated by" />
+    <dependency from="-1924538014" to="1250402153" type="annotated by" />
+    <dependency from="-646079440" to="7904440" type="is type" />
+    <dependency from="-842611258" to="-1417313045" type="annotated by" />
+    <dependency from="-842611258" to="727975260" type="annotated by" />
+    <dependency from="-842611258" to="243245158" type="annotated by" />
+    <dependency from="-901096395" to="-713784080" type="is type" />
+    <dependency from="-1124366757" to="-924574201" type="returns" />
+    <dependency from="-1124366757" to="1086921378" type="has param" />
+    <dependency from="-1124366757" to="453256796" type="annotated by" />
+    <dependency from="-1124366757" to="-1924538014" type="uses" />
+    <dependency from="-1124366757" to="2089652442" type="annotated by" />
+    <dependency from="-1124366757" to="-889510713" type="annotated by" />
+    <dependency from="-1124366757" to="986269384" type="annotated by" />
+    <dependency from="-1124366757" to="372192294" type="calls" />
+    <dependency from="-1124366757" to="702219997" type="references" />
+    <dependency from="-1124366757" to="-863793743" type="calls" />
+    <dependency from="-1124366757" to="1703389090" type="references" />
+    <dependency from="-359150687" to="-924574201" type="returns" />
+    <dependency from="-359150687" to="736983651" type="annotated by" />
+    <dependency from="-359150687" to="1711427887" type="uses" />
+    <dependency from="-359150687" to="372192294" type="calls" />
+    <dependency from="-359150687" to="-713784080" type="references" />
+    <dependency from="-359150687" to="-900779586" type="calls" />
+    <dependency from="-359150687" to="-901096395" type="references" />
+    <dependency from="1664060724" to="-924574201" type="returns" />
+    <dependency from="1664060724" to="-781217034" type="annotated by" />
+    <dependency from="1664060724" to="2089652442" type="annotated by" />
+    <dependency from="1664060724" to="-713784080" type="references" />
+    <dependency from="1664060724" to="142248496" type="calls" />
+    <dependency from="1664060724" to="-901096395" type="references" />
+    <dependency from="1664060724" to="-550998956" type="references" />
+    <dependency from="1664060724" to="1994760551" type="calls" />
+    <dependency from="1664060724" to="1381676633" type="calls" />
+    <dependency from="1004343232" to="259571451" type="is type" />
+    <dependency from="1797456866" to="-924574201" type="returns" />
+    <dependency from="1797456866" to="736983651" type="annotated by" />
+    <dependency from="1797456866" to="454911748" type="uses" />
+    <dependency from="1797456866" to="2089652442" type="annotated by" />
+    <dependency from="1797456866" to="372192294" type="calls" />
+    <dependency from="1797456866" to="259571451" type="references" />
+    <dependency from="1797456866" to="388758596" type="calls" />
+    <dependency from="1797456866" to="1004343232" type="references" />
+    <dependency from="2049076233" to="-924574201" type="returns" />
+    <dependency from="2049076233" to="1938774464" type="has param" />
+    <dependency from="2049076233" to="-1258343189" type="annotated by" />
+    <dependency from="2049076233" to="454911748" type="uses" />
+    <dependency from="2049076233" to="-889510713" type="annotated by" />
+    <dependency from="2049076233" to="986269384" type="annotated by" />
+    <dependency from="2049076233" to="1690682386" type="references" />
+    <dependency from="2049076233" to="-1576473545" type="calls" />
+    <dependency from="2049076233" to="-610555977" type="calls" />
+    <dependency from="2049076233" to="-441920847" type="uses" />
+    <dependency from="2049076233" to="-1570089065" type="references" />
+    <dependency from="2049076233" to="259571451" type="references" />
+    <dependency from="2049076233" to="-1558505882" type="calls" />
+    <dependency from="2049076233" to="1004343232" type="references" />
+    <dependency from="-359931526" to="-924574201" type="returns" />
+    <dependency from="-359931526" to="2141836181" type="annotated by" />
+    <dependency from="-359931526" to="-1924538014" type="uses" />
+    <dependency from="-359931526" to="2089652442" type="annotated by" />
+    <dependency from="-359931526" to="372192294" type="calls" />
+    <dependency from="-359931526" to="702219997" type="references" />
+    <dependency from="-359931526" to="-760926394" type="calls" />
+    <dependency from="-359931526" to="1703389090" type="references" />
+    <dependency from="224580665" to="-924574201" type="returns" />
+    <dependency from="224580665" to="736983651" type="annotated by" />
+    <dependency from="224580665" to="1711427887" type="uses" />
+    <dependency from="224580665" to="2089652442" type="annotated by" />
+    <dependency from="224580665" to="372192294" type="calls" />
+    <dependency from="224580665" to="-713784080" type="references" />
+    <dependency from="224580665" to="-936198502" type="calls" />
+    <dependency from="224580665" to="-901096395" type="references" />
+    <dependency from="277331840" to="-924574201" type="returns" />
+    <dependency from="277331840" to="736983651" type="annotated by" />
+    <dependency from="277331840" to="-1924538014" type="uses" />
+    <dependency from="277331840" to="2089652442" type="annotated by" />
+    <dependency from="277331840" to="372192294" type="calls" />
+    <dependency from="277331840" to="702219997" type="references" />
+    <dependency from="277331840" to="-1307541120" type="calls" />
+    <dependency from="277331840" to="1703389090" type="references" />
+    <dependency from="80090817" to="-924574201" type="returns" />
+    <dependency from="80090817" to="736983651" type="annotated by" />
+    <dependency from="80090817" to="-1924538014" type="uses" />
+    <dependency from="80090817" to="372192294" type="calls" />
+    <dependency from="80090817" to="702219997" type="references" />
+    <dependency from="80090817" to="-1429160405" type="calls" />
+    <dependency from="80090817" to="1703389090" type="references" />
+    <dependency from="-1608649625" to="-924574201" type="returns" />
+    <dependency from="-1608649625" to="-184450507" type="has param" />
+    <dependency from="-1608649625" to="453256796" type="annotated by" />
+    <dependency from="-1608649625" to="1711427887" type="uses" />
+    <dependency from="-1608649625" to="2089652442" type="annotated by" />
+    <dependency from="-1608649625" to="-889510713" type="annotated by" />
+    <dependency from="-1608649625" to="986269384" type="annotated by" />
+    <dependency from="-1608649625" to="372192294" type="calls" />
+    <dependency from="-1608649625" to="-713784080" type="references" />
+    <dependency from="-1608649625" to="1317125790" type="calls" />
+    <dependency from="-1608649625" to="-901096395" type="references" />
+    <dependency from="-1540842679" to="-924574201" type="returns" />
+    <dependency from="-1540842679" to="1086921378" type="has param" />
+    <dependency from="-1540842679" to="-1258343189" type="annotated by" />
+    <dependency from="-1540842679" to="-1924538014" type="uses" />
+    <dependency from="-1540842679" to="-889510713" type="annotated by" />
+    <dependency from="-1540842679" to="986269384" type="annotated by" />
+    <dependency from="-1540842679" to="1690682386" type="references" />
+    <dependency from="-1540842679" to="-1576473545" type="calls" />
+    <dependency from="-1540842679" to="-610555977" type="calls" />
+    <dependency from="-1540842679" to="-441920847" type="uses" />
+    <dependency from="-1540842679" to="-1570089065" type="references" />
+    <dependency from="-1540842679" to="702219997" type="references" />
+    <dependency from="-1540842679" to="1226836292" type="calls" />
+    <dependency from="-1540842679" to="1703389090" type="references" />
+    <dependency from="1010248249" to="-924574201" type="returns" />
+    <dependency from="1010248249" to="736983651" type="annotated by" />
+    <dependency from="1010248249" to="454911748" type="uses" />
+    <dependency from="1010248249" to="372192294" type="calls" />
+    <dependency from="1010248249" to="259571451" type="references" />
+    <dependency from="1010248249" to="-224292829" type="calls" />
+    <dependency from="1010248249" to="1004343232" type="references" />
+    <dependency from="362383900" to="-924574201" type="returns" />
+    <dependency from="362383900" to="736983651" type="annotated by" />
+    <dependency from="362383900" to="1711427887" type="uses" />
+    <dependency from="362383900" to="372192294" type="calls" />
+    <dependency from="362383900" to="-713784080" type="references" />
+    <dependency from="362383900" to="767245027" type="calls" />
+    <dependency from="362383900" to="-901096395" type="references" />
+    <dependency from="1302029755" to="-924574201" type="returns" />
+    <dependency from="1302029755" to="-781217034" type="annotated by" />
+    <dependency from="1302029755" to="2089652442" type="annotated by" />
+    <dependency from="1302029755" to="702219997" type="references" />
+    <dependency from="1302029755" to="935603619" type="calls" />
+    <dependency from="1302029755" to="1703389090" type="references" />
+    <dependency from="1302029755" to="-550998956" type="references" />
+    <dependency from="1302029755" to="1994760551" type="calls" />
+    <dependency from="1302029755" to="1381676633" type="calls" />
+    <dependency from="972826534" to="-924574201" type="returns" />
+    <dependency from="972826534" to="736983651" type="annotated by" />
+    <dependency from="972826534" to="-1924538014" type="uses" />
+    <dependency from="972826534" to="372192294" type="calls" />
+    <dependency from="972826534" to="702219997" type="references" />
+    <dependency from="972826534" to="-200581104" type="calls" />
+    <dependency from="972826534" to="1703389090" type="references" />
+    <dependency from="1703389090" to="702219997" type="is type" />
+    <dependency from="-1296755691" to="-924574201" type="returns" />
+    <dependency from="-1296755691" to="-184450507" type="has param" />
+    <dependency from="-1296755691" to="-1258343189" type="annotated by" />
+    <dependency from="-1296755691" to="1711427887" type="uses" />
+    <dependency from="-1296755691" to="-889510713" type="annotated by" />
+    <dependency from="-1296755691" to="986269384" type="annotated by" />
+    <dependency from="-1296755691" to="1690682386" type="references" />
+    <dependency from="-1296755691" to="-1576473545" type="calls" />
+    <dependency from="-1296755691" to="-610555977" type="calls" />
+    <dependency from="-1296755691" to="-441920847" type="uses" />
+    <dependency from="-1296755691" to="-1570089065" type="references" />
+    <dependency from="-1296755691" to="-713784080" type="references" />
+    <dependency from="-1296755691" to="142299249" type="calls" />
+    <dependency from="-1296755691" to="-901096395" type="references" />
+    <dependency from="1496968371" to="-924574201" type="returns" />
+    <dependency from="1496968371" to="2141836181" type="annotated by" />
+    <dependency from="1496968371" to="1711427887" type="uses" />
+    <dependency from="1496968371" to="2089652442" type="annotated by" />
+    <dependency from="1496968371" to="372192294" type="calls" />
+    <dependency from="1496968371" to="-713784080" type="references" />
+    <dependency from="1496968371" to="-349516832" type="calls" />
+    <dependency from="1496968371" to="-901096395" type="references" />
+    <dependency from="1696621396" to="-1943732327" type="implements" />
+    <dependency from="1696621396" to="-683193621" type="annotated by" />
+    <dependency from="1696621396" to="-506573732" type="uses" />
+    <dependency from="386443223" to="7904440" type="has param" />
+    <dependency from="386443223" to="-506573732" type="uses" />
+    <dependency from="-1205932575" to="-1943732327" type="implements" />
+    <dependency from="-1205932575" to="-683193621" type="annotated by" />
+    <dependency from="-1205932575" to="-1393812375" type="uses" />
+    <dependency from="2093643434" to="7904440" type="has param" />
+    <dependency from="2093643434" to="-1393812375" type="uses" />
+    <dependency from="991633432" to="-1393812375" type="uses" />
+    <dependency from="-564742436" to="1377614957" type="annotated by" />
+    <dependency from="-648071997" to="-1990764432" type="returns" />
+    <dependency from="-648071997" to="-882277215" type="annotated by" />
+    <dependency from="-648071997" to="-494379167" type="is type" />
+    <dependency from="-648071997" to="412684461" type="calls" />
+    <dependency from="-648071997" to="338522454" type="calls" />
+    <dependency from="-648071997" to="-1655917526" type="calls" />
+    <dependency from="-648071997" to="438149042" type="calls" />
+    <dependency from="-648071997" to="1605269431" type="calls" />
+    <dependency from="-648071997" to="1363931929" type="calls" />
+    <dependency from="-648071997" to="1314467370" type="is type" />
+    <dependency from="-648071997" to="-958419318" type="calls" />
+    <dependency from="-1244199136" to="205439035" type="implements" />
+    <dependency from="-1244199136" to="-1092870091" type="annotated by" />
+    <dependency from="-308620513" to="1422381001" type="references" />
+    <dependency from="-1670692593" to="1422381001" type="references" />
+    <dependency from="-397059911" to="-1123645782" type="annotated by" />
+    <dependency from="820675770" to="-1350965497" type="annotated by" />
+    <dependency from="-1122430172" to="-1231399430" type="references" />
+    <dependency from="-1819987565" to="-2118245710" type="references" />
+    <dependency from="-1746017772" to="-1421275800" type="references" />
+    <dependency from="-1127169081" to="-1755433256" type="calls" />
+    <dependency from="-1127169081" to="-2118245710" type="references" />
+    <dependency from="-1127169081" to="868607457" type="references" />
+    <dependency from="-1127169081" to="-714268538" type="references" />
+    <dependency from="-1127169081" to="-1231399430" type="references" />
+    <dependency from="-1127169081" to="-1421275800" type="references" />
+    <dependency from="-1243116165" to="-714268538" type="references" />
+    <dependency from="-1818557472" to="-1755433256" type="calls" />
+    <dependency from="-1818557472" to="-2118245710" type="references" />
+    <dependency from="-1818557472" to="868607457" type="references" />
+    <dependency from="-1818557472" to="-714268538" type="references" />
+    <dependency from="-1818557472" to="-1231399430" type="references" />
+    <dependency from="-122339584" to="868607457" type="references" />
+    <dependency from="322650685" to="-924574201" type="returns" />
+    <dependency from="322650685" to="-1039634678" type="has param" />
+    <dependency from="322650685" to="-1580616496" type="has param" />
+    <dependency from="322650685" to="-618395424" type="annotated by" />
+    <dependency from="322650685" to="-1755433256" type="uses" />
+    <dependency from="322650685" to="-835918760" type="calls" />
+    <dependency from="322650685" to="-441920847" type="references" />
+    <dependency from="322650685" to="848205577" type="calls" />
+    <dependency from="322650685" to="1421623082" type="references" />
+    <dependency from="818907958" to="-924574201" type="returns" />
+    <dependency from="818907958" to="323902450" type="has param" />
+    <dependency from="818907958" to="-1580616496" type="has param" />
+    <dependency from="818907958" to="-618395424" type="annotated by" />
+    <dependency from="818907958" to="-822091215" type="references" />
+    <dependency from="818907958" to="1214823007" type="calls" />
+    <dependency from="818907958" to="-1478292714" type="returns" />
+    <dependency from="818907958" to="1641026438" type="references" />
+    <dependency from="818907958" to="336480484" type="calls" />
+    <dependency from="818907958" to="-1681397234" type="is type" />
+    <dependency from="818907958" to="1086348308" type="calls" />
+    <dependency from="818907958" to="61638161" type="references" />
+    <dependency from="818907958" to="1572303693" type="calls" />
+    <dependency from="818907958" to="-1755433256" type="is type" />
+    <dependency from="818907958" to="-835918760" type="calls" />
+    <dependency from="818907958" to="-441920847" type="references" />
+    <dependency from="818907958" to="848205577" type="calls" />
+    <dependency from="818907958" to="1421623082" type="references" />
+    <dependency from="1736181085" to="-924574201" type="returns" />
+    <dependency from="1736181085" to="2072377711" type="has param" />
+    <dependency from="1736181085" to="-1580616496" type="has param" />
+    <dependency from="1736181085" to="-618395424" type="annotated by" />
+    <dependency from="1736181085" to="-1755433256" type="uses" />
+    <dependency from="1736181085" to="-835918760" type="calls" />
+    <dependency from="1736181085" to="-441920847" type="references" />
+    <dependency from="1736181085" to="848205577" type="calls" />
+    <dependency from="1736181085" to="-1850030455" type="references" />
+    <dependency from="2054712208" to="-924574201" type="returns" />
+    <dependency from="2054712208" to="-1580616496" type="has param" />
+    <dependency from="2054712208" to="-618395424" type="annotated by" />
+    <dependency from="2054712208" to="-1755433256" type="uses" />
+    <dependency from="2054712208" to="-835918760" type="calls" />
+    <dependency from="2054712208" to="-441920847" type="references" />
+    <dependency from="2054712208" to="848205577" type="calls" />
+    <dependency from="2054712208" to="-1898894671" type="references" />
+    <dependency from="1617897638" to="-1417313045" type="annotated by" />
+    <dependency from="1617897638" to="727975260" type="annotated by" />
+    <dependency from="1617897638" to="243245158" type="annotated by" />
+    <dependency from="-1517800830" to="702219997" type="is type" />
+    <dependency from="1697048345" to="-924574201" type="returns" />
+    <dependency from="1697048345" to="736983651" type="annotated by" />
+    <dependency from="1697048345" to="1711427887" type="uses" />
+    <dependency from="1697048345" to="2089652442" type="annotated by" />
+    <dependency from="1697048345" to="372192294" type="calls" />
+    <dependency from="1697048345" to="-713784080" type="references" />
+    <dependency from="1697048345" to="-936198502" type="calls" />
+    <dependency from="1697048345" to="-1466892523" type="references" />
+    <dependency from="-2020435360" to="-924574201" type="returns" />
+    <dependency from="-2020435360" to="736983651" type="annotated by" />
+    <dependency from="-2020435360" to="-1924538014" type="uses" />
+    <dependency from="-2020435360" to="2089652442" type="annotated by" />
+    <dependency from="-2020435360" to="372192294" type="calls" />
+    <dependency from="-2020435360" to="702219997" type="references" />
+    <dependency from="-2020435360" to="-1307541120" type="calls" />
+    <dependency from="-2020435360" to="-1517800830" type="references" />
+    <dependency from="-1466892523" to="-713784080" type="is type" />
+    <dependency from="-717032644" to="-924574201" type="returns" />
+    <dependency from="-717032644" to="736983651" type="annotated by" />
+    <dependency from="-717032644" to="1711427887" type="uses" />
+    <dependency from="-717032644" to="372192294" type="calls" />
+    <dependency from="-717032644" to="-713784080" type="references" />
+    <dependency from="-717032644" to="767245027" type="calls" />
+    <dependency from="-717032644" to="-1466892523" type="references" />
+    <dependency from="1870652038" to="-924574201" type="returns" />
+    <dependency from="1870652038" to="736983651" type="annotated by" />
+    <dependency from="1870652038" to="-1924538014" type="uses" />
+    <dependency from="1870652038" to="372192294" type="calls" />
+    <dependency from="1870652038" to="702219997" type="references" />
+    <dependency from="1870652038" to="-200581104" type="calls" />
+    <dependency from="1870652038" to="-1517800830" type="references" />
+    <dependency from="2118308512" to="259571451" type="is type" />
+    <dependency from="-1025042750" to="-924574201" type="returns" />
+    <dependency from="-1025042750" to="736983651" type="annotated by" />
+    <dependency from="-1025042750" to="454911748" type="uses" />
+    <dependency from="-1025042750" to="2089652442" type="annotated by" />
+    <dependency from="-1025042750" to="372192294" type="calls" />
+    <dependency from="-1025042750" to="259571451" type="references" />
+    <dependency from="-1025042750" to="388758596" type="calls" />
+    <dependency from="-1025042750" to="2118308512" type="references" />
+    <dependency from="599460257" to="-924574201" type="returns" />
+    <dependency from="599460257" to="736983651" type="annotated by" />
+    <dependency from="599460257" to="-1924538014" type="uses" />
+    <dependency from="599460257" to="372192294" type="calls" />
+    <dependency from="599460257" to="702219997" type="references" />
+    <dependency from="599460257" to="-1429160405" type="calls" />
+    <dependency from="599460257" to="-1517800830" type="references" />
+    <dependency from="-1312228159" to="-924574201" type="returns" />
+    <dependency from="-1312228159" to="736983651" type="annotated by" />
+    <dependency from="-1312228159" to="1711427887" type="uses" />
+    <dependency from="-1312228159" to="372192294" type="calls" />
+    <dependency from="-1312228159" to="-713784080" type="references" />
+    <dependency from="-1312228159" to="-900779586" type="calls" />
+    <dependency from="-1312228159" to="-1466892523" type="references" />
+    <dependency from="1362951449" to="-924574201" type="returns" />
+    <dependency from="1362951449" to="736983651" type="annotated by" />
+    <dependency from="1362951449" to="454911748" type="uses" />
+    <dependency from="1362951449" to="372192294" type="calls" />
+    <dependency from="1362951449" to="259571451" type="references" />
+    <dependency from="1362951449" to="-224292829" type="calls" />
+    <dependency from="1362951449" to="2118308512" type="references" />
+    <dependency from="-1883667201" to="259571451" type="implements" />
+    <dependency from="-1883667201" to="-1123645782" type="annotated by" />
+    <dependency from="-1883667201" to="243245158" type="annotated by" />
+    <dependency from="212799967" to="454911748" type="returns" />
+    <dependency from="212799967" to="-1347730647" type="annotated by" />
+    <dependency from="212799967" to="-957723074" type="is type" />
+    <dependency from="212799967" to="-1712897285" type="references" />
+    <dependency from="212799967" to="716548119" type="calls" />
+    <dependency from="212799967" to="-20686116" type="references" />
+    <dependency from="212799967" to="1897240054" type="uses" />
+    <dependency from="212799967" to="2072377711" type="calls" />
+    <dependency from="212799967" to="-1883667201" type="references" />
+    <dependency from="212799967" to="1094632207" type="calls" />
+    <dependency from="-1378323974" to="1696621396" type="is type" />
+    <dependency from="-1459765467" to="-957723074" type="returns" />
+    <dependency from="-1459765467" to="1938774464" type="has param" />
+    <dependency from="-1605770133" to="454911748" type="returns" />
+    <dependency from="-1605770133" to="1938774464" type="has param" />
+    <dependency from="-1605770133" to="-1347730647" type="annotated by" />
+    <dependency from="-1605770133" to="-1393812375" type="is type" />
+    <dependency from="-1605770133" to="-1712897285" type="references" />
+    <dependency from="-1605770133" to="716548119" type="calls" />
+    <dependency from="-1605770133" to="-857221817" type="references" />
+    <dependency from="-1605770133" to="-1205932575" type="uses" />
+    <dependency from="-1605770133" to="7904440" type="uses" />
+    <dependency from="-1605770133" to="-560420616" type="references" />
+    <dependency from="-1605770133" to="-1039634678" type="calls" />
+    <dependency from="-1605770133" to="-506573732" type="is type" />
+    <dependency from="-1605770133" to="-1378323974" type="references" />
+    <dependency from="-1605770133" to="1696621396" type="uses" />
+    <dependency from="-1605770133" to="-957723074" type="is type" />
+    <dependency from="-1605770133" to="-1883667201" type="references" />
+    <dependency from="-1605770133" to="-1459765467" type="calls" />
+    <dependency from="-1605770133" to="-1220260232" type="calls" />
+    <dependency from="-1605770133" to="-20686116" type="references" />
+    <dependency from="-1605770133" to="1897240054" type="uses" />
+    <dependency from="-1605770133" to="1094632207" type="calls" />
+    <dependency from="-857221817" to="-1205932575" type="is type" />
+    <dependency from="1169345704" to="-1347730647" type="annotated by" />
+    <dependency from="1169345704" to="454911748" type="uses" />
+    <dependency from="1169345704" to="1711733885" type="references" />
+    <dependency from="1169345704" to="-1857395642" type="calls" />
+    <dependency from="1169345704" to="-20686116" type="references" />
+    <dependency from="1169345704" to="1897240054" type="uses" />
+    <dependency from="1169345704" to="-1883667201" type="uses" />
+    <dependency from="1094632207" to="454911748" type="returns" />
+    <dependency from="1094632207" to="-957723074" type="has param" />
+    <dependency from="-20686116" to="1897240054" type="is type" />
+    <dependency from="454911748" to="1941614213" type="annotated by" />
+    <dependency from="454911748" to="-1579221871" type="annotated by" />
+    <dependency from="454911748" to="1250402153" type="annotated by" />
+    <dependency from="-200581104" to="-1924538014" type="uses" />
+    <dependency from="-1307541120" to="-1924538014" type="returns" />
+    <dependency from="-760926394" to="-1924538014" type="returns" />
+    <dependency from="1226836292" to="-1924538014" type="returns" />
+    <dependency from="1226836292" to="1086921378" type="has param" />
+    <dependency from="-863793743" to="-1924538014" type="returns" />
+    <dependency from="-863793743" to="1086921378" type="has param" />
+    <dependency from="-1429160405" to="-1924538014" type="uses" />
+    <dependency from="663357060" to="-1417313045" type="annotated by" />
+    <dependency from="663357060" to="727975260" type="annotated by" />
+    <dependency from="663357060" to="243245158" type="annotated by" />
+    <dependency from="-1818205965" to="-713784080" type="is type" />
+    <dependency from="835187817" to="-924574201" type="returns" />
+    <dependency from="835187817" to="-184450507" type="has param" />
+    <dependency from="835187817" to="453256796" type="annotated by" />
+    <dependency from="835187817" to="1711427887" type="uses" />
+    <dependency from="835187817" to="2089652442" type="annotated by" />
+    <dependency from="835187817" to="-889510713" type="annotated by" />
+    <dependency from="835187817" to="986269384" type="annotated by" />
+    <dependency from="835187817" to="372192294" type="calls" />
+    <dependency from="835187817" to="-713784080" type="references" />
+    <dependency from="835187817" to="1317125790" type="calls" />
+    <dependency from="835187817" to="-1818205965" type="references" />
+    <dependency from="-770180682" to="-924574201" type="returns" />
+    <dependency from="-770180682" to="-781217034" type="annotated by" />
+    <dependency from="-770180682" to="2089652442" type="annotated by" />
+    <dependency from="-770180682" to="-713784080" type="references" />
+    <dependency from="-770180682" to="142248496" type="calls" />
+    <dependency from="-770180682" to="-1818205965" type="references" />
+    <dependency from="-770180682" to="-550998956" type="references" />
+    <dependency from="-770180682" to="1994760551" type="calls" />
+    <dependency from="-770180682" to="1381676633" type="calls" />
+    <dependency from="-1541752387" to="-924574201" type="returns" />
+    <dependency from="-1541752387" to="-781217034" type="annotated by" />
+    <dependency from="-1541752387" to="2089652442" type="annotated by" />
+    <dependency from="-1541752387" to="702219997" type="references" />
+    <dependency from="-1541752387" to="935603619" type="calls" />
+    <dependency from="-1541752387" to="266688224" type="references" />
+    <dependency from="-1541752387" to="-550998956" type="references" />
+    <dependency from="-1541752387" to="1994760551" type="calls" />
+    <dependency from="-1541752387" to="1381676633" type="calls" />
+    <dependency from="2135354443" to="-924574201" type="returns" />
+    <dependency from="2135354443" to="1086921378" type="has param" />
+    <dependency from="2135354443" to="-1258343189" type="annotated by" />
+    <dependency from="2135354443" to="-1924538014" type="uses" />
+    <dependency from="2135354443" to="-889510713" type="annotated by" />
+    <dependency from="2135354443" to="986269384" type="annotated by" />
+    <dependency from="2135354443" to="1690682386" type="references" />
+    <dependency from="2135354443" to="-1576473545" type="calls" />
+    <dependency from="2135354443" to="-610555977" type="calls" />
+    <dependency from="2135354443" to="-441920847" type="uses" />
+    <dependency from="2135354443" to="-1570089065" type="references" />
+    <dependency from="2135354443" to="702219997" type="references" />
+    <dependency from="2135354443" to="1226836292" type="calls" />
+    <dependency from="2135354443" to="266688224" type="references" />
+    <dependency from="1807316606" to="259571451" type="is type" />
+    <dependency from="266688224" to="702219997" type="is type" />
+    <dependency from="1267735" to="-924574201" type="returns" />
+    <dependency from="1267735" to="-184450507" type="has param" />
+    <dependency from="1267735" to="-1258343189" type="annotated by" />
+    <dependency from="1267735" to="1711427887" type="uses" />
+    <dependency from="1267735" to="-889510713" type="annotated by" />
+    <dependency from="1267735" to="986269384" type="annotated by" />
+    <dependency from="1267735" to="1690682386" type="references" />
+    <dependency from="1267735" to="-1576473545" type="calls" />
+    <dependency from="1267735" to="-610555977" type="calls" />
+    <dependency from="1267735" to="-441920847" type="uses" />
+    <dependency from="1267735" to="-1570089065" type="references" />
+    <dependency from="1267735" to="-713784080" type="references" />
+    <dependency from="1267735" to="142299249" type="calls" />
+    <dependency from="1267735" to="-1818205965" type="references" />
+    <dependency from="-55864483" to="-924574201" type="returns" />
+    <dependency from="-55864483" to="1086921378" type="has param" />
+    <dependency from="-55864483" to="453256796" type="annotated by" />
+    <dependency from="-55864483" to="-1924538014" type="uses" />
+    <dependency from="-55864483" to="2089652442" type="annotated by" />
+    <dependency from="-55864483" to="-889510713" type="annotated by" />
+    <dependency from="-55864483" to="986269384" type="annotated by" />
+    <dependency from="-55864483" to="372192294" type="calls" />
+    <dependency from="-55864483" to="702219997" type="references" />
+    <dependency from="-55864483" to="-863793743" type="calls" />
+    <dependency from="-55864483" to="266688224" type="references" />
+    <dependency from="-544895477" to="-924574201" type="returns" />
+    <dependency from="-544895477" to="1938774464" type="has param" />
+    <dependency from="-544895477" to="-1258343189" type="annotated by" />
+    <dependency from="-544895477" to="454911748" type="uses" />
+    <dependency from="-544895477" to="-889510713" type="annotated by" />
+    <dependency from="-544895477" to="986269384" type="annotated by" />
+    <dependency from="-544895477" to="1690682386" type="references" />
+    <dependency from="-544895477" to="-1576473545" type="calls" />
+    <dependency from="-544895477" to="-610555977" type="calls" />
+    <dependency from="-544895477" to="-441920847" type="uses" />
+    <dependency from="-544895477" to="-1570089065" type="references" />
+    <dependency from="-544895477" to="259571451" type="references" />
+    <dependency from="-544895477" to="-1558505882" type="calls" />
+    <dependency from="-544895477" to="1807316606" type="references" />
+    <dependency from="2058469520" to="-1972210175" type="calls" />
+    <dependency from="-446307350" to="-1972210175" type="calls" />
+    <dependency from="-2082279383" to="-1972210175" type="calls" />
+    <dependency from="239984187" to="-2068201819" type="annotated by" />
+    <dependency from="239984187" to="-1840585149" type="annotated by" />
+    <dependency from="2143740298" to="-1749699412" type="returns" />
+    <dependency from="2143740298" to="838809948" type="references" />
+    <dependency from="2143740298" to="1497548487" type="calls" />
+    <dependency from="2143740298" to="239984187" type="uses" />
+    <dependency from="-843321183" to="702219997" type="implements" />
+    <dependency from="-843321183" to="-1123645782" type="annotated by" />
+    <dependency from="-843321183" to="243245158" type="annotated by" />
+    <dependency from="1519549013" to="-1347730647" type="annotated by" />
+    <dependency from="1519549013" to="-1924538014" type="uses" />
+    <dependency from="1519549013" to="1696621396" type="references" />
+    <dependency from="1519549013" to="386443223" type="calls" />
+    <dependency from="1519549013" to="538345880" type="references" />
+    <dependency from="1519549013" to="7904440" type="uses" />
+    <dependency from="1519549013" to="-560420616" type="references" />
+    <dependency from="1519549013" to="-843321183" type="uses" />
+    <dependency from="583971441" to="-1924538014" type="returns" />
+    <dependency from="583971441" to="-506573732" type="has param" />
+    <dependency from="538345880" to="1696621396" type="is type" />
+    <dependency from="-1263979931" to="-1205932575" type="is type" />
+    <dependency from="-400985917" to="-506573732" type="returns" />
+    <dependency from="-400985917" to="1086921378" type="has param" />
+    <dependency from="-627710210" to="-1347730647" type="annotated by" />
+    <dependency from="-627710210" to="-506573732" type="is type" />
+    <dependency from="-627710210" to="-1712897285" type="references" />
+    <dependency from="-627710210" to="716548119" type="calls" />
+    <dependency from="-627710210" to="538345880" type="references" />
+    <dependency from="-627710210" to="1696621396" type="uses" />
+    <dependency from="-627710210" to="2072377711" type="calls" />
+    <dependency from="-627710210" to="7904440" type="uses" />
+    <dependency from="-627710210" to="-560420616" type="references" />
+    <dependency from="-627710210" to="-1039634678" type="calls" />
+    <dependency from="-627710210" to="-1205932575" type="references" />
+    <dependency from="-627710210" to="991633432" type="calls" />
+    <dependency from="-627710210" to="-1263979931" type="references" />
+    <dependency from="-627710210" to="-1220260232" type="calls" />
+    <dependency from="2012970889" to="-1924538014" type="returns" />
+    <dependency from="2012970889" to="1086921378" type="has param" />
+    <dependency from="2012970889" to="-1347730647" type="annotated by" />
+    <dependency from="2012970889" to="-1393812375" type="is type" />
+    <dependency from="2012970889" to="-1712897285" type="references" />
+    <dependency from="2012970889" to="716548119" type="calls" />
+    <dependency from="2012970889" to="-1263979931" type="references" />
+    <dependency from="2012970889" to="-1205932575" type="uses" />
+    <dependency from="2012970889" to="7904440" type="uses" />
+    <dependency from="2012970889" to="-560420616" type="references" />
+    <dependency from="2012970889" to="-1039634678" type="calls" />
+    <dependency from="2012970889" to="-506573732" type="is type" />
+    <dependency from="2012970889" to="-843321183" type="references" />
+    <dependency from="2012970889" to="-400985917" type="calls" />
+    <dependency from="2012970889" to="688011645" type="references" />
+    <dependency from="2012970889" to="-1220260232" type="calls" />
+    <dependency from="2012970889" to="538345880" type="references" />
+    <dependency from="2012970889" to="1696621396" type="uses" />
+    <dependency from="2012970889" to="583971441" type="calls" />
+    <dependency from="2132672353" to="-1924538014" type="returns" />
+    <dependency from="2132672353" to="-1347730647" type="annotated by" />
+    <dependency from="2132672353" to="-506573732" type="is type" />
+    <dependency from="2132672353" to="-1712897285" type="references" />
+    <dependency from="2132672353" to="716548119" type="calls" />
+    <dependency from="2132672353" to="538345880" type="references" />
+    <dependency from="2132672353" to="1696621396" type="uses" />
+    <dependency from="2132672353" to="2072377711" type="calls" />
+    <dependency from="2132672353" to="7904440" type="uses" />
+    <dependency from="2132672353" to="688011645" type="references" />
+    <dependency from="2132672353" to="-1039634678" type="calls" />
+    <dependency from="2132672353" to="-1220260232" type="calls" />
+    <dependency from="2132672353" to="-1263979931" type="references" />
+    <dependency from="2132672353" to="-1205932575" type="uses" />
+    <dependency from="2132672353" to="-843321183" type="references" />
+    <dependency from="2132672353" to="583971441" type="calls" />
+    <dependency from="1586057627" to="-1924538014" type="returns" />
+    <dependency from="1586057627" to="-1347730647" type="annotated by" />
+    <dependency from="1586057627" to="-506573732" type="is type" />
+    <dependency from="1586057627" to="-1712897285" type="references" />
+    <dependency from="1586057627" to="716548119" type="calls" />
+    <dependency from="1586057627" to="538345880" type="references" />
+    <dependency from="1586057627" to="1696621396" type="uses" />
+    <dependency from="1586057627" to="2072377711" type="calls" />
+    <dependency from="1586057627" to="-843321183" type="references" />
+    <dependency from="1586057627" to="583971441" type="calls" />
+    <dependency from="312073398" to="-1924538014" type="returns" />
+    <dependency from="312073398" to="1086921378" type="has param" />
+    <dependency from="312073398" to="-1347730647" type="annotated by" />
+    <dependency from="312073398" to="-506573732" type="is type" />
+    <dependency from="312073398" to="-1712897285" type="references" />
+    <dependency from="312073398" to="716548119" type="calls" />
+    <dependency from="312073398" to="538345880" type="references" />
+    <dependency from="312073398" to="1696621396" type="uses" />
+    <dependency from="312073398" to="2072377711" type="calls" />
+    <dependency from="312073398" to="-1263979931" type="references" />
+    <dependency from="312073398" to="-1205932575" type="uses" />
+    <dependency from="312073398" to="-1220260232" type="calls" />
+    <dependency from="312073398" to="-843321183" type="references" />
+    <dependency from="312073398" to="583971441" type="calls" />
+    <dependency from="1853072816" to="-1347730647" type="annotated by" />
+    <dependency from="1853072816" to="-1924538014" type="uses" />
+    <dependency from="1853072816" to="1696621396" type="references" />
+    <dependency from="1853072816" to="386443223" type="calls" />
+    <dependency from="1853072816" to="538345880" type="references" />
+    <dependency from="1853072816" to="7904440" type="uses" />
+    <dependency from="1853072816" to="688011645" type="references" />
+    <dependency from="1853072816" to="-843321183" type="uses" />
+  </dependencies>
+</data>

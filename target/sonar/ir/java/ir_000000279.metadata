@@ -1,0 +1,9 @@
+pe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxService#save(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxRequest;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxResponse;
+false
+a912fc47263c2aa4ce2315041b9b7d44
+java.time.LocalDateTime#now()Ljava/time/LocalDateTime;
+pe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxService#toEntity(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxRequest;)Lpe/edu/vallegrande/ms_infraestructura/domain/models/WaterBox;
+pe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxService#toResponse(Lpe/edu/vallegrande/ms_infraestructura/domain/models/WaterBox;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxResponse;
+==
+!unknownMethod! !unknownMethod!
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;

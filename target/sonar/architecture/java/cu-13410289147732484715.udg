@@ -1,0 +1,446 @@
+
+1.0infrastructuraJavaFrontend"1757830686547*java2.B»
+^
+Ysrc/main/java/pe/edu/vallegrande/ms_infraestructura/domain/models/WaterBoxAssignment.java2
+
+package4
+8
+3pe.edu.vallegrande.ms_infraestructura.domain.models5
+K
+Fpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+WaterBoxAssignment12
+ 
+jakarta.persistence.Entity14
+
+unknown15
+
+annotated by16
+
+
+uses17
+
+jakarta.persistence.Table19
+
+lombok.Getter21
+
+lombok.Setter23
+
+lombok.NoArgsConstructor25
+
+lombok.AllArgsConstructor27
+
+lombok.Builder29
+)
+#jakarta.persistence.EntityListeners31
+H
+Borg.springframework.data.jpa.domain.support.AuditingEntityListener33
+O
+Ipe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment.id35
+
+field36
+
+private37
+
+id38
+
+jakarta.persistence.Id40
+(
+"jakarta.persistence.GeneratedValue42
+(
+"jakarta.persistence.GenerationType44
+1
++jakarta.persistence.GenerationType.IDENTITY46
+
+
+references47
+ 
+jakarta.persistence.Column49
+W
+Qpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment.waterBoxId51
+
+
+waterBoxId52
+S
+Mpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment.userId54
+
+userId55
+V
+Ppe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment.startDate57
+
+	startDate58
+T
+Npe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment.endDate60
+
+endDate61
+W
+Qpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment.monthlyFee63
+
+
+monthlyFee64
+S
+Mpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment.status66
+
+status67
+?
+9pe.edu.vallegrande.ms_infraestructura.domain.enums.Status69
+
+is type70
+$
+jakarta.persistence.Enumerated72
+"
+jakarta.persistence.EnumType74
+)
+#jakarta.persistence.EnumType.STRING76
+V
+Ppe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment.createdAt78
+
+	createdAt79
+5
+/org.springframework.data.annotation.CreatedDate81
+W
+Qpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment.transferId83
+
+
+transferId84J
+
+1
+12Z
+
+3	
+354j‰
+
+68
+686915
+
+13
+131415
+
+22
+222315
+
+20
+202115
+
+43
+434415
+@
+53:
+535436 *
+1 (26:3B
+	
+9
+37
+
+
+11
+55
+
+18
+181915
+
+75
+757615
+@
+34:
+343536 *
+1 (26:3B
+	
+9
+37
+
+
+11
+38
+@
+59:
+596036 *
+1# #(26:3B
+	
+9
+37
+
+
+11
+61
+
+30
+303115
+
+80
+808115
+
+32
+323315
+@
+50:
+505136 *
+1 (26:3B
+	
+9
+37
+
+
+11
+52
+@
+56:
+565736 *
+1   (26:3B
+	
+9
+37
+
+
+11
+58
+
+39
+394015
+
+41
+414215
+
+45
+454615
+
+71
+717215
+@
+82:
+828336 *
+12 2(26:3B
+	
+9
+37
+
+
+11
+84
+
+48
+484915
+9
+64
+678 *
+1 ( :3B
+	
+9
+10
+
+
+11
+12
+
+73
+737415
+@
+65:
+656636 *
+1) )(26:3B
+	
+9
+37
+
+
+11
+67
+@
+77:
+777836 *
+1- -(26:3B
+	
+9
+37
+
+
+11
+79
+
+28
+282915
+@
+62:
+626336 *
+1& &(26:3B
+	
+9
+37
+
+
+11
+64
+
+26
+262715
+
+24
+242515r„
+
+61316*
+1 (
+
+61317*
+1 (
+
+61816*
+1 (
+
+61817*
+1 (
+
+62016*
+1 (
+
+62017*
+1 (
+
+62216*
+1 (
+
+62217*
+1 (
+
+62416*
+1 (
+
+62417*
+1 (
+
+62616*
+1 (
+
+62617*
+1 (
+
+62816*
+1 (
+
+62817*
+1 (	
+
+63016*
+1 (
+
+63017*
+1 (
+
+63217*
+1 ((
+
+6617*
+1 ( 
+
+343916*
+1 (
+
+343917*
+1 (
+
+344116*
+1 (
+
+344117*
+1 (
+
+344317*
+1  (.
+
+344317*
+1/ (7
+
+344547*
+1/ (7
+
+344816*
+1 (
+
+344817*
+1 (
+
+504816*
+1 (
+
+504817*
+1 (
+
+534816*
+1 (
+
+534817*
+1 (
+
+564816*
+1   (
+
+564817*
+1   (
+
+594816*
+1# #(
+
+594817*
+1# #(
+
+624816*
+1& &(
+
+624817*
+1& &(
+
+656870*
+1+ +(
+
+657116*
+1) )(
+
+657117*
+1) )(
+
+657317*
+1) )(
+
+657317*
+1) )( 
+
+657547*
+1) )( 
+
+654816*
+1* *(
+
+654817*
+1* *(
+
+656817*
+1+ +(
+
+656817*
+1+ +(
+
+778016*
+1- -(
+
+778017*
+1- -(
+
+774816*
+1. .(
+
+774817*
+1. .(
+
+824816*
+12 2(
+
+824817*
+12 2(

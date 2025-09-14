@@ -1,0 +1,207 @@
+
+1.0infrastructuraJavaFrontend"1757830688595*java2.Bù
+
+p
+ksrc/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxTransferRequest.java2
+
+package4
+E
+@pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request5
+]
+Xpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+WaterBoxTransferRequest12
+
+lombok.Getter14
+
+unknown15
+
+annotated by16
+
+
+uses17
+
+lombok.Setter19
+
+lombok.Builder21
+i
+cpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest.waterBoxId23
+
+field24
+
+private25
+
+
+waterBoxId26
+,
+&jakarta.validation.constraints.NotNull28
+n
+hpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest.oldAssignmentId30
+
+oldAssignmentId31
+n
+hpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest.newAssignmentId33
+
+newAssignmentId34
+m
+gpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest.transferReason36
+
+transferReason37
+-
+'jakarta.validation.constraints.NotBlank39
+)
+#jakarta.validation.constraints.Size41
+h
+bpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest.documents43
+
+	documents44J
+
+1
+12Z
+
+3	
+354j˝
+
+18
+181915
+@
+42:
+424324 *
+1 (26:3B
+	
+9
+25
+
+
+11
+44
+9
+64
+678 *
+1 (%:3B
+	
+9
+10
+
+
+11
+12
+
+13
+131415
+
+20
+202115
+
+38
+383915
+@
+35:
+353624 *
+1 (26:3B
+	
+9
+25
+
+
+11
+37
+@
+32:
+323324 *
+1 (26:3B
+	
+9
+25
+
+
+11
+34
+
+40
+404115
+@
+22:
+222324 *
+1 (26:3B
+	
+9
+25
+
+
+11
+26
+
+27
+272815
+@
+29:
+293024 *
+1 (26:3B
+	
+9
+25
+
+
+11
+31r√
+
+61316*
+1 (
+
+61317*
+1 (
+
+61816*
+1 (
+
+61817*
+1 (
+
+62016*
+1 (
+
+62017*
+1 (	
+
+6617*
+1 (%
+
+222716*
+1 (
+
+222717*
+1 (
+
+292716*
+1 (
+
+292717*
+1 (
+
+322716*
+1 (
+
+322717*
+1 (
+
+353816*
+1 (
+
+353817*
+1 (
+
+354016*
+1 (
+
+354017*
+1 (

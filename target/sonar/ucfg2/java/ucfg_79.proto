@@ -1,0 +1,31 @@
+
+êpe.edu.vallegrande.ms_infraestructura.infrastructure.rest.client.ClientRest#getAllInactiveAssignments()Lorg/springframework/http/ResponseEntity;›
+“C:/Users/frank/Desktop/Carpeta General/microservicio-infrastructure-actualizado/microservicios/vg-ms-infrastructure/src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/rest/client/ClientRest.java5< 5(U"1*ö
+16 6(˝
+˙
+6! 6(:[
+%0Upe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService"__id*ä
+
+__unknown_file (n*lM
+Kpe.edu.vallegrande.ms_infraestructura.infrastructure.rest.client.ClientRest"
+waterBoxAssignmentService®•
+6! 6(K
+%1java.util.List"vpe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService#getAllInactive()Ljava/util/List;*y
+
+__unknown_file (]
+[
+%0Upe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService2getAllInactive()¢
+ü
+6 6(L-
+%2'org.springframework.http.ResponseEntity"gorg.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;*G
+
+__unknown_file (+")
+'org.springframework.http.ResponseEntity*2
+
+__unknown_file (
+
+%1java.util.List";
+6 6(M/
+-
+%2'org.springframework.http.ResponseEntityBOM
+Kpe.edu.vallegrande.ms_infraestructura.infrastructure.rest.client.ClientRestH

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WaterBoxAssignmentService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ms_infraestructura</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.ms_infraestructura.application.services.impl</a> &gt; <span class="el_source">WaterBoxAssignmentService.java</span></div><h1>WaterBoxAssignmentService.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.ms_infraestructura.application.services.impl;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService;
+import pe.edu.vallegrande.ms_infraestructura.domain.enums.Status;
+import pe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox;
+import pe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequest;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxAssignmentResponse;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.BadRequestException;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.NotFoundException;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxAssignmentRepository;
+import pe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxRepository;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.stream.Collectors;
+
+@Service
+<span class="fc" id="L22">@RequiredArgsConstructor</span>
+public class WaterBoxAssignmentService implements IWaterBoxAssignmentService {
+
+    private final WaterBoxAssignmentRepository waterBoxAssignmentRepository;
+    private final WaterBoxRepository waterBoxRepository;
+
+    @Override
+    @Transactional(readOnly = true)
+    public List&lt;WaterBoxAssignmentResponse&gt; getAllActive() {
+<span class="nc" id="L31">        return waterBoxAssignmentRepository.findByStatus(Status.ACTIVE).stream()</span>
+<span class="nc" id="L32">                .map(this::toResponse)</span>
+<span class="nc" id="L33">                .collect(Collectors.toList());</span>
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List&lt;WaterBoxAssignmentResponse&gt; getAllInactive() {
+<span class="nc" id="L39">        return waterBoxAssignmentRepository.findByStatus(Status.INACTIVE).stream()</span>
+<span class="nc" id="L40">                .map(this::toResponse)</span>
+<span class="nc" id="L41">                .collect(Collectors.toList());</span>
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public WaterBoxAssignmentResponse getById(Long id) {
+<span class="nc" id="L47">        WaterBoxAssignment assignment = waterBoxAssignmentRepository.findById(id)</span>
+<span class="nc" id="L48">                .orElseThrow(() -&gt; new NotFoundException(&quot;WaterBoxAssignment con ID &quot; + id + &quot; no encontrada.&quot;));</span>
+<span class="nc" id="L49">        return toResponse(assignment);</span>
+    }
+
+    @Override
+    @Transactional
+    public WaterBoxAssignmentResponse save(WaterBoxAssignmentRequest request) {
+        // Validar si la WaterBox existe y está activa
+<span class="nc" id="L56">        WaterBox waterBox = waterBoxRepository.findById(request.getWaterBoxId())</span>
+<span class="nc" id="L57">                .orElseThrow(() -&gt; new NotFoundException(&quot;WaterBox con ID &quot; + request.getWaterBoxId() + &quot; no encontrada.&quot;));</span>
+
+<span class="nc bnc" id="L59" title="All 2 branches missed.">        if (waterBox.getStatus().equals(Status.INACTIVE)) {</span>
+<span class="nc" id="L60">            throw new BadRequestException(&quot;No se puede asignar a una WaterBox inactiva.&quot;);</span>
+        }
+
+        // Si la WaterBox ya tiene una asignación actual, desactivarla.
+        //if (waterBox.getCurrentAssignmentId() != null) {
+         //   waterBoxAssignmentRepository.findById(waterBox.getCurrentAssignmentId()).ifPresent(currentAssignment -&gt; {
+           //     currentAssignment.setStatus(Status.INACTIVE);
+         //       currentAssignment.setEndDate(LocalDateTime.now());
+        //        waterBoxAssignmentRepository.save(currentAssignment);
+        //    });
+       // }
+
+<span class="nc" id="L72">        WaterBoxAssignment assignment = toEntity(request);</span>
+<span class="nc" id="L73">        assignment.setStatus(Status.ACTIVE);</span>
+<span class="nc" id="L74">        assignment.setCreatedAt(LocalDateTime.now());</span>
+
+<span class="nc" id="L76">        WaterBoxAssignment savedAssignment = waterBoxAssignmentRepository.save(assignment);</span>
+
+        // Actualizar la WaterBox con la nueva asignación actual
+<span class="nc" id="L79">        waterBox.setCurrentAssignmentId(savedAssignment.getId());</span>
+<span class="nc" id="L80">        waterBoxRepository.save(waterBox);</span>
+
+<span class="nc" id="L82">        return toResponse(savedAssignment);</span>
+    }
+
+    @Override
+    @Transactional
+    public WaterBoxAssignmentResponse update(Long id, WaterBoxAssignmentRequest request) {
+<span class="nc" id="L88">        WaterBoxAssignment existingAssignment = waterBoxAssignmentRepository.findById(id)</span>
+<span class="nc" id="L89">                .orElseThrow(() -&gt; new NotFoundException(&quot;WaterBoxAssignment con ID &quot; + id + &quot; no encontrada para actualizar.&quot;));</span>
+
+        // Asegurarse de que la WaterBox referenciada exista
+<span class="nc" id="L92">        waterBoxRepository.findById(request.getWaterBoxId())</span>
+<span class="nc" id="L93">                .orElseThrow(() -&gt; new NotFoundException(&quot;WaterBox con ID &quot; + request.getWaterBoxId() + &quot; no encontrada.&quot;));</span>
+
+<span class="nc" id="L95">        existingAssignment.setWaterBoxId(request.getWaterBoxId());</span>
+<span class="nc" id="L96">        existingAssignment.setUserId(request.getUserId());</span>
+<span class="nc" id="L97">        existingAssignment.setStartDate(request.getStartDate());</span>
+<span class="nc" id="L98">        existingAssignment.setMonthlyFee(request.getMonthlyFee());</span>
+        // El status y created_at no se actualizan directamente en este método.
+
+<span class="nc" id="L101">        WaterBoxAssignment updatedAssignment = waterBoxAssignmentRepository.save(existingAssignment);</span>
+<span class="nc" id="L102">        return toResponse(updatedAssignment);</span>
+    }
+
+    @Override
+    @Transactional
+    public void delete(Long id) { // Soft delete
+<span class="nc" id="L108">        WaterBoxAssignment assignment = waterBoxAssignmentRepository.findById(id)</span>
+<span class="nc" id="L109">                .orElseThrow(() -&gt; new NotFoundException(&quot;WaterBoxAssignment con ID &quot; + id + &quot; no encontrada para eliminación.&quot;));</span>
+
+<span class="nc bnc" id="L111" title="All 2 branches missed.">        if (assignment.getStatus().equals(Status.INACTIVE)) {</span>
+<span class="nc" id="L112">            throw new BadRequestException(&quot;WaterBoxAssignment con ID &quot; + id + &quot; ya está inactiva.&quot;);</span>
+        }
+
+        // Si esta asignación es la `current_assignment_id` de una WaterBox, desvincularla
+<span class="nc" id="L116">        waterBoxRepository.findByCurrentAssignmentId(assignment.getId()).ifPresent(waterBox -&gt; {</span>
+<span class="nc" id="L117">            waterBox.setCurrentAssignmentId(null);</span>
+<span class="nc" id="L118">            waterBoxRepository.save(waterBox);</span>
+<span class="nc" id="L119">        });</span>
+
+<span class="nc" id="L121">        assignment.setStatus(Status.INACTIVE);</span>
+<span class="nc" id="L122">        assignment.setEndDate(LocalDateTime.now());</span>
+<span class="nc" id="L123">        waterBoxAssignmentRepository.save(assignment);</span>
+<span class="nc" id="L124">    }</span>
+
+    @Override
+    @Transactional
+    public WaterBoxAssignmentResponse restore(Long id) { // Restore soft deleted
+<span class="nc" id="L129">        WaterBoxAssignment assignment = waterBoxAssignmentRepository.findById(id)</span>
+<span class="nc" id="L130">                .orElseThrow(() -&gt; new NotFoundException(&quot;WaterBoxAssignment con ID &quot; + id + &quot; no encontrada para restauración.&quot;));</span>
+
+<span class="nc bnc" id="L132" title="All 2 branches missed.">        if (assignment.getStatus().equals(Status.ACTIVE)) {</span>
+<span class="nc" id="L133">            throw new BadRequestException(&quot;WaterBoxAssignment con ID &quot; + id + &quot; ya está activa.&quot;);</span>
+        }
+
+<span class="nc" id="L136">        assignment.setStatus(Status.ACTIVE);</span>
+<span class="nc" id="L137">        assignment.setEndDate(null); // Borra la fecha de fin al restaurar</span>
+<span class="nc" id="L138">        WaterBoxAssignment restoredAssignment = waterBoxAssignmentRepository.save(assignment);</span>
+
+        // Si se restaura una asignación, y su WaterBox está activa, debería ser la asignación actual
+        // No forzamos que sea la current_assignment_id aquí, se podría manejar con un caso de uso específico.
+        // Por ahora, solo restauramos la asignación en sí.
+        // Si quieres que se convierta en la current_assignment_id de su WaterBox,
+        // deberías agregar lógica para eso (ej. verificar si la WaterBox tiene otra asignación activa).
+        // Por simplicidad, esta lógica no lo hace automáticamente a menos que no haya otra activa.
+<span class="nc" id="L146">        waterBoxRepository.findById(restoredAssignment.getWaterBoxId()).ifPresent(waterBox -&gt; {</span>
+            // Solo actualiza current_assignment_id si la WaterBox no tiene otra asignación activa
+<span class="nc bnc" id="L148" title="All 2 branches missed.">            if (waterBox.getCurrentAssignmentId() == null || waterBoxAssignmentRepository.findById(waterBox.getCurrentAssignmentId())</span>
+<span class="nc bnc" id="L149" title="All 2 branches missed.">                    .map(a -&gt; a.getStatus().equals(Status.INACTIVE)).orElse(true)) {</span>
+<span class="nc" id="L150">                waterBox.setCurrentAssignmentId(restoredAssignment.getId());</span>
+<span class="nc" id="L151">                waterBoxRepository.save(waterBox);</span>
+            }
+<span class="nc" id="L153">        });</span>
+
+
+<span class="nc" id="L156">        return toResponse(restoredAssignment);</span>
+    }
+
+    private WaterBoxAssignment toEntity(WaterBoxAssignmentRequest request) {
+<span class="nc" id="L160">        return WaterBoxAssignment.builder()</span>
+<span class="nc" id="L161">                .waterBoxId(request.getWaterBoxId())</span>
+<span class="nc" id="L162">                .userId(request.getUserId())</span>
+<span class="nc" id="L163">                .startDate(request.getStartDate())</span>
+<span class="nc" id="L164">                .monthlyFee(request.getMonthlyFee())</span>
+<span class="nc" id="L165">                .build();</span>
+    }
+
+    private WaterBoxAssignmentResponse toResponse(WaterBoxAssignment assignment) {
+<span class="nc" id="L169">        return WaterBoxAssignmentResponse.builder()</span>
+<span class="nc" id="L170">                .id(assignment.getId())</span>
+<span class="nc" id="L171">                .waterBoxId(assignment.getWaterBoxId())</span>
+<span class="nc" id="L172">                .userId(assignment.getUserId())</span>
+<span class="nc" id="L173">                .startDate(assignment.getStartDate())</span>
+<span class="nc" id="L174">                .endDate(assignment.getEndDate())</span>
+<span class="nc" id="L175">                .monthlyFee(assignment.getMonthlyFee())</span>
+<span class="nc" id="L176">                .status(assignment.getStatus())</span>
+<span class="nc" id="L177">                .createdAt(assignment.getCreatedAt())</span>
+<span class="nc" id="L178">                .transferId(assignment.getTransferId())</span>
+<span class="nc" id="L179">                .build();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

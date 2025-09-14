@@ -1,0 +1,141 @@
+
+1.0infrastructuraJavaFrontend"1757830679640*java2.Bò
+
+k
+fsrc/main/java/pe/edu/vallegrande/ms_infraestructura/application/services/IWaterBoxTransferService.java2
+
+package4
+?
+:pe.edu.vallegrande.ms_infraestructura.application.services5
+X
+Spe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+
+IWaterBoxTransferService12
+
+
+uses13
+r
+lpe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService#getAll()Ljava/util/List;15
+
+method16
+
+getAll17
+`
+Zpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxTransferResponse19
+
+unknown20
+–
+…pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService#getById(Ljava/lang/Long;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxTransferResponse;22
+
+getById23
+
+returns24
+ó
+êpe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService#save(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxTransferRequest;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxTransferResponse;26
+
+
+save27
+^
+Xpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxTransferRequest29
+
+	has param30
+
+is type31J
+
+1
+12Z
+
+3	
+354j©
+@
+25:
+252616 *
+1 (26:3B
+	
+9
+10
+
+
+11
+27
+9
+64
+678 *
+1 (*:3B
+	
+9
+10
+
+
+11
+12
+
+28
+282920
+@
+21:
+212216 *
+1
+ 
+(26:3B
+	
+9
+10
+
+
+11
+23
+@
+14:
+141516 *
+1	 	(	26:3B
+	
+9
+10
+
+
+11
+17
+
+18
+181920rÒ
+
+6613*
+1 (*
+
+141813*
+1	
+ 	("
+
+211824*
+1
+ 
+(
+
+211813*
+1
+ 
+(
+
+251824*
+1 (
+
+252830*
+1# (:
+
+251813*
+1 (
+
+252831*
+1; (B
+
+252813*
+1# (:

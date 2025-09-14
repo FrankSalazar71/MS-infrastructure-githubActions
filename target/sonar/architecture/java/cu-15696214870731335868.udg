@@ -1,0 +1,451 @@
+
+1.0infrastructuraJavaFrontend"1757830686053*java2.BÎ
+T
+Osrc/main/java/pe/edu/vallegrande/ms_infraestructura/domain/models/WaterBox.java2
+
+package4
+8
+3pe.edu.vallegrande.ms_infraestructura.domain.models5
+A
+<pe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+WaterBox12
+ 
+jakarta.persistence.Entity14
+
+unknown15
+
+annotated by16
+
+
+uses17
+
+jakarta.persistence.Table19
+
+lombok.Getter21
+
+lombok.Setter23
+
+lombok.NoArgsConstructor25
+
+lombok.AllArgsConstructor27
+
+lombok.Builder29
+)
+#jakarta.persistence.EntityListeners31
+H
+Borg.springframework.data.jpa.domain.support.AuditingEntityListener33
+E
+?pe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox.id35
+
+field36
+
+private37
+
+id38
+
+jakarta.persistence.Id40
+(
+"jakarta.persistence.GeneratedValue42
+(
+"jakarta.persistence.GenerationType44
+1
++jakarta.persistence.GenerationType.IDENTITY46
+
+
+references47
+ 
+jakarta.persistence.Column49
+Q
+Kpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox.organizationId51
+
+organizationId52
+J
+Dpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox.boxCode54
+
+boxCode55
+J
+Dpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox.boxType57
+
+boxType58
+@
+:pe.edu.vallegrande.ms_infraestructura.domain.enums.BoxType60
+
+is type61
+$
+jakarta.persistence.Enumerated63
+"
+jakarta.persistence.EnumType65
+)
+#jakarta.persistence.EnumType.STRING67
+S
+Mpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox.installationDate69
+
+installationDate70
+V
+Ppe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox.currentAssignmentId72
+
+currentAssignmentId73
+I
+Cpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox.status75
+
+status76
+?
+9pe.edu.vallegrande.ms_infraestructura.domain.enums.Status78
+L
+Fpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox.createdAt80
+
+	createdAt81
+5
+/org.springframework.data.annotation.CreatedDate83J
+
+1
+12Z
+
+3	
+354jÛ
+
+77
+777815
+
+13
+131415
+
+22
+222315
+@
+34:
+343536 *
+1 (26:3B
+	
+9
+37
+
+
+11
+38
+
+20
+202115
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+
+43
+434415
+@
+68:
+686936 *
+1% %(26:3B
+	
+9
+37
+
+
+11
+70
+
+18
+181915
+
+66
+666715
+
+30
+303115
+
+82
+828315
+@
+56:
+565736 *
+1! !(26:3B
+	
+9
+37
+
+
+11
+58
+
+32
+323315
+@
+50:
+505136 *
+1 (26:3B
+	
+9
+37
+
+
+11
+52
+
+59
+596015
+@
+71:
+717236 *
+1) )(26:3B
+	
+9
+37
+
+
+11
+73
+
+39
+394015
+
+41
+414215
+
+45
+454615
+
+62
+626315
+@
+53:
+535436 *
+1 (26:3B
+	
+9
+37
+
+
+11
+55
+@
+74:
+747536 *
+1, ,(26:3B
+	
+9
+37
+
+
+11
+76
+
+48
+484915
+@
+79:
+798036 *
+10 0(26:3B
+	
+9
+37
+
+
+11
+81
+
+64
+646515
+
+28
+282915
+
+26
+262715
+
+24
+242515r¦
+
+61316*
+1 (
+
+61317*
+1 (
+
+61816*
+1 (
+
+61817*
+1 (
+
+62016*
+1 (
+
+62017*
+1 (
+
+62216*
+1 (
+
+62217*
+1 (
+
+62416*
+1 (
+
+62417*
+1 (
+
+62616*
+1 (
+
+62617*
+1 (
+
+62816*
+1 (
+
+62817*
+1 (	
+
+63016*
+1 (
+
+63017*
+1 (
+
+63217*
+1 ((
+
+6617*
+1 (
+
+343916*
+1 (
+
+343917*
+1 (
+
+344116*
+1 (
+
+344117*
+1 (
+
+344317*
+1  (.
+
+344317*
+1/ (7
+
+344547*
+1/ (7
+
+344816*
+1 (
+
+344817*
+1 (
+
+504816*
+1 (
+
+504817*
+1 (
+
+534816*
+1 (
+
+534817*
+1 (
+
+565961*
+1# #(
+
+566216*
+1! !(
+
+566217*
+1! !(
+
+566417*
+1! !(
+
+566417*
+1! !( 
+
+566647*
+1! !( 
+
+564816*
+1" "(
+
+564817*
+1" "(
+
+565917*
+1# #(
+
+565917*
+1# #(
+
+684816*
+1% %(
+
+684817*
+1% %(
+
+714816*
+1) )(
+
+714817*
+1) )(
+
+747761*
+1. .(
+
+746216*
+1, ,(
+
+746217*
+1, ,(
+
+746417*
+1, ,(
+
+746417*
+1, ,( 
+
+746647*
+1, ,( 
+
+744816*
+1- -(
+
+744817*
+1- -(
+
+747717*
+1. .(
+
+747717*
+1. .(
+
+798216*
+10 0(
+
+798217*
+10 0(
+
+794816*
+11 1(
+
+794817*
+11 1(

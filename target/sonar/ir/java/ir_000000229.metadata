@@ -1,0 +1,12 @@
+pe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService#delete(Ljava/lang/Long;)V
+false
+ac19f014d0e3ab1e53f213aac7abc2a1
+java.time.LocalDateTime#now()Ljava/time/LocalDateTime;
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.BadRequestException#<init>(Ljava/lang/String;)V
+pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.BadRequestException#instance-init#
+==
+!unknownMethod! !unknownMethod!
+findByCurrentAssignmentId pe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxRepository#findByCurrentAssignmentId(Ljava/lang/Long;)Ljava/util/Optional;
+findById org.springframework.data.repository.CrudRepository#findById(Ljava/lang/Object;)Ljava/util/Optional;
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;

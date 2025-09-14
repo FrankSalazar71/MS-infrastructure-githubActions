@@ -1,0 +1,7 @@
+pe.edu.vallegrande.ms_infraestructura.infrastructure.rest.superAdmin.SuperAdminRest#deleteWaterBox(Ljava/lang/Long;)Lorg/springframework/http/ResponseEntity;
+false
+3b444dd6f6d427e5a47f8defd4ab7446
+org.springframework.http.ResponseEntity#noContent()Lorg/springframework/http/ResponseEntity$HeadersBuilder;
+==
+build org.springframework.http.ResponseEntity$HeadersBuilder#build()Lorg/springframework/http/ResponseEntity;
+delete pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxService#delete(Ljava/lang/Long;)V

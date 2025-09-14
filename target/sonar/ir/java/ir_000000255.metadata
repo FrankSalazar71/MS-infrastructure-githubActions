@@ -1,0 +1,6 @@
+pe.edu.vallegrande.ms_infraestructura.infrastructure.rest.superAdmin.SuperAdminRest#restoreAssignment(Ljava/lang/Long;)Lorg/springframework/http/ResponseEntity;
+false
+691742dfdb559f2ea0b8e375be8c7507
+org.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
+==
+restore pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService#restore(Ljava/lang/Long;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse;

@@ -1,0 +1,10 @@
+pe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxService#delete(Ljava/lang/Long;)V
+false
+f6d81c7614321df8fe03bd68ea5f3867
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.BadRequestException#<init>(Ljava/lang/String;)V
+pe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.BadRequestException#instance-init#
+==
+!unknownMethod! !unknownMethod!
+findById org.springframework.data.repository.CrudRepository#findById(Ljava/lang/Object;)Ljava/util/Optional;
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;

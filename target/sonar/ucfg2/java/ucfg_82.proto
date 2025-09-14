@@ -1,0 +1,37 @@
+
+–pe.edu.vallegrande.ms_infraestructura.infrastructure.rest.client.ClientRest#getTransferById(Ljava/lang/Long;)Lorg/springframework/http/ResponseEntity;Ý
+ÒC:/Users/frank/Desktop/Carpeta General/microservicio-infrastructure-actualizado/microservicios/vg-ms-infrastructure/src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/rest/client/ClientRest.javaH4 H(C"1*½	
+1I I(ù
+ö
+I! I(8Y
+%0Spe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService"__id*ˆ
+
+__unknown_file (l*jM
+Kpe.edu.vallegrande.ms_infraestructura.infrastructure.rest.client.ClientRest"
+waterBoxTransferServiceƒ€
+I! I(D`
+%1Zpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxTransferResponse"Épe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService#getById(Ljava/lang/Long;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxTransferResponse;*w
+
+__unknown_file ([
+Y
+%0Spe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxTransferService*2
+
+__unknown_file (
+
+idjava.lang.Long2getById(Ljava/lang/Long;)î
+ë
+I I(E-
+%2'org.springframework.http.ResponseEntity"gorg.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;*G
+
+__unknown_file (+")
+'org.springframework.http.ResponseEntity*~
+
+__unknown_file (b
+`
+%1Zpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxTransferResponse";
+I I(F/
+-
+%2'org.springframework.http.ResponseEntity: 
+HD H(Y
+idjava.lang.LongBOM
+Kpe.edu.vallegrande.ms_infraestructura.infrastructure.rest.client.ClientRestH

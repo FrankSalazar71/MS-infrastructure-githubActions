@@ -1,0 +1,23 @@
+pe.edu.vallegrande.ms_infraestructura.application.config.OpenApiConfig#customOpenAPI()Lio/swagger/v3/oas/models/OpenAPI;
+false
+9ab5d43828d96d182dc573bb8945eaa9
+io.swagger.v3.oas.models.OpenAPI#<init>()V
+io.swagger.v3.oas.models.OpenAPI#instance-init#
+io.swagger.v3.oas.models.info.Contact#<init>()V
+io.swagger.v3.oas.models.info.Contact#instance-init#
+io.swagger.v3.oas.models.info.Info#<init>()V
+io.swagger.v3.oas.models.info.Info#instance-init#
+io.swagger.v3.oas.models.info.License#<init>()V
+io.swagger.v3.oas.models.info.License#instance-init#
+==
+contact io.swagger.v3.oas.models.info.Info#contact(Lio/swagger/v3/oas/models/info/Contact;)Lio/swagger/v3/oas/models/info/Info;
+description io.swagger.v3.oas.models.info.Info#description(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Info;
+email io.swagger.v3.oas.models.info.Contact#email(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Contact;
+info io.swagger.v3.oas.models.OpenAPI#info(Lio/swagger/v3/oas/models/info/Info;)Lio/swagger/v3/oas/models/OpenAPI;
+license io.swagger.v3.oas.models.info.Info#license(Lio/swagger/v3/oas/models/info/License;)Lio/swagger/v3/oas/models/info/Info;
+name io.swagger.v3.oas.models.info.Contact#name(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Contact;
+name io.swagger.v3.oas.models.info.License#name(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/License;
+title io.swagger.v3.oas.models.info.Info#title(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Info;
+url io.swagger.v3.oas.models.info.Contact#url(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Contact;
+url io.swagger.v3.oas.models.info.License#url(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/License;
+version io.swagger.v3.oas.models.info.Info#version(Ljava/lang/String;)Lio/swagger/v3/oas/models/info/Info;

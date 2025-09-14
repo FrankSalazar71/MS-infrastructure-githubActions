@@ -1,0 +1,953 @@
+
+1.0infrastructuraJavaFrontend"1757830678254*java2.B§%
+q
+lsrc/main/java/pe/edu/vallegrande/ms_infraestructura/application/services/impl/WaterBoxAssignmentService.java2
+
+package4
+D
+?pe.edu.vallegrande.ms_infraestructura.application.services.impl5
+^
+Ype.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+WaterBoxAssignmentService12
+[
+Upe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService14
+
+unknown15
+
+
+implements16
+,
+&org.springframework.stereotype.Service18
+
+annotated by19
+
+
+uses20
+$
+lombok.RequiredArgsConstructor22
+|
+vpe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService.waterBoxAssignmentRepository24
+
+field25
+
+private26
+"
+waterBoxAssignmentRepository27
+b
+\pe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxAssignmentRepository29
+
+is type30
+r
+lpe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService.waterBoxRepository32
+
+waterBoxRepository33
+X
+Rpe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxRepository35
+~
+xpe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService#getAllActive()Ljava/util/List;37
+
+method38
+
+getAllActive39
+>
+8org.springframework.transaction.annotation.Transactional41
+b
+\pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxAssignmentResponse43
+
+
+references44
+½
+¶pe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxAssignmentRepository#findByStatus(Lpe/edu/vallegrande/ms_infraestructura/domain/enums/Status;)Ljava/util/List;46
+
+calls47
+?
+9pe.edu.vallegrande.ms_infraestructura.domain.enums.Status49
+F
+@pe.edu.vallegrande.ms_infraestructura.domain.enums.Status.ACTIVE51
+€
+zpe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService#getAllInactive()Ljava/util/List;53
+
+getAllInactive54
+H
+Bpe.edu.vallegrande.ms_infraestructura.domain.enums.Status.INACTIVE56
+Ø
+Ñpe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService#getById(Ljava/lang/Long;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse;58
+
+getById59
+
+returns60
+L
+Fpe.edu.vallegrande.ms_infraestructura.domain.models.WaterBoxAssignment62
+8
+2org.springframework.data.repository.CrudRepository64
+i
+corg.springframework.data.repository.CrudRepository#findById(Ljava/lang/Object;)Ljava/util/Optional;66
+W
+Qpe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.NotFoundException68
+“
+Œpe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService#toResponse(Lpe/edu/vallegrande/ms_infraestructura/domain/models/WaterBoxAssignment;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse;70
+¡
+špe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService#save(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxAssignmentRequest;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse;72
+
+
+save73
+`
+Zpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequest75
+
+	has param76
+B
+<pe.edu.vallegrande.ms_infraestructura.domain.models.WaterBox78
+Y
+Spe.edu.vallegrande.ms_infraestructura.infrastructure.exceptions.BadRequestException80
+
+ˆpe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService#toEntity(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxAssignmentRequest;)Lpe/edu/vallegrande/ms_infraestructura/domain/models/WaterBoxAssignment;82
+c
+]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;84
+³
+¬pe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService#update(Ljava/lang/Long;Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxAssignmentRequest;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse;86
+
+update87
+y
+spe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService#delete(Ljava/lang/Long;)V89
+
+delete90
+™
+’pe.edu.vallegrande.ms_infraestructura.infrastructure.repository.WaterBoxRepository#findByCurrentAssignmentId(Ljava/lang/Long;)Ljava/util/Optional;92
+Ø
+Ñpe.edu.vallegrande.ms_infraestructura.application.services.impl.WaterBoxAssignmentService#restore(Ljava/lang/Long;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse;94
+
+restore95
+
+toEntity96
+
+
+toResponse97J
+
+1
+12Z
+
+3	
+354j¥	
+
+48
+484915
+
+79
+798015
+
+67
+676815
+@
+57:
+575838 *
+1, ,(26:3B
+	
+9
+10
+
+
+11
+59
+
+91
+919215
+
+74
+747515
+
+21
+212215
+
+42
+424315
+
+77
+777815
+
+63
+636415
+@
+71:
+717238 *
+14 4(26:3B
+	
+9
+10
+
+
+11
+73
+
+34
+343515
+9
+64
+678 *
+1 (':3B
+	
+9
+10
+
+
+11
+12
+
+17
+171815
+B
+81<
+818238 *
+1Ÿ Ÿ(26:3B
+	
+9
+26
+
+
+11
+96
+@
+52:
+525338 *
+1$ $(26:3B
+	
+9
+10
+
+
+11
+54
+
+83
+838415
+
+45
+454615
+
+50
+505115
+B
+69<
+697038 *
+1¨ ¨(26:3B
+	
+9
+26
+
+
+11
+97
+@
+36:
+363738 *
+1 (26:3B
+	
+9
+10
+
+
+11
+39
+
+13
+131415
+@
+31:
+313225 *
+1 (26:3B
+	
+9
+26
+
+
+11
+33
+
+61
+616215
+@
+88:
+888938 *
+1i i(26:3B
+	
+9
+10
+
+
+11
+90
+
+28
+282915
+
+55
+555615
+@
+23:
+232425 *
+1 (26:3B
+	
+9
+26
+
+
+11
+27
+
+65
+656615
+@
+93:
+939438 *
+1~ ~(26:3B
+	
+9
+10
+
+
+11
+95
+
+40
+404115
+@
+85:
+858638 *
+1U U(26:3B
+	
+9
+10
+
+
+11
+87r ,
+
+61316*
+13 (M
+
+61719*
+1 (
+
+61720*
+1 (	
+
+62119*
+1 (
+
+62120*
+1 (
+
+6620*
+1 ('
+
+61320*
+13 (M
+
+232830*
+1 (/
+
+232820*
+1 (/
+
+232820*
+10 (L
+
+313430*
+1 (%
+
+313420*
+1 (%
+
+313420*
+1& (8
+
+364019*
+1 (
+
+364020*
+1 (
+
+364220*
+1 (+
+
+362844*
+1 (,
+
+364547*
+1- (9
+
+362344*
+1 (,
+
+362820*
+1 (,
+
+362344*
+1 (,
+
+364820*
+1: (@
+
+364820*
+1A (G
+
+365044*
+1A (G
+
+36620*
+1   (
+
+36644*
+1   (
+
+524019*
+1% %(
+
+524020*
+1% %(
+
+524220*
+1& &(+
+
+522844*
+1' '(,
+
+524547*
+1'- '(9
+
+522344*
+1' '(,
+
+522820*
+1' '(,
+
+522344*
+1' '(,
+
+524820*
+1': '(@
+
+524820*
+1'A '(I
+
+525544*
+1'A '(I
+
+52620*
+1( ((
+
+52644*
+1( ((
+
+574260*
+1. .(&
+
+574019*
+1- -(
+
+574020*
+1- -(
+
+574220*
+1. .(&
+
+576130*
+1/ /(&
+
+576120*
+1/	 /(
+
+576160*
+1/) /(E
+
+576344*
+1/) /(E
+
+576547*
+1/F /(N
+
+572344*
+1/) /(E
+
+572820*
+1/) /(E
+
+572344*
+1/) /(E
+
+576747*
+10( 0(9
+
+574260*
+11 1(
+
+57644*
+11 1(
+
+576947*
+11 1(
+
+714260*
+16 6(&
+
+717476*
+16, 6(E
+
+714019*
+15 5(
+
+714020*
+15 5(
+
+714220*
+16 6(&
+
+717430*
+16F 6(M
+
+717420*
+16, 6(E
+
+717730*
+18 8(
+
+717720*
+18	 8(
+
+716344*
+18 8(/
+
+716547*
+180 8(8
+
+713144*
+18 8(/
+
+713420*
+18 8(/
+
+713144*
+18 8(/
+
+714820*
+1;) ;(/
+
+714820*
+1;0 ;(8
+
+715544*
+1;0 ;(8
+
+717947*
+1< <(*
+
+716130*
+1H H(&
+
+716120*
+1H	 H(
+
+716160*
+1H) H(1
+
+71644*
+1H) H(1
+
+718147*
+1H) H(1
+
+714820*
+1I I($
+
+714820*
+1I% I(+
+
+715044*
+1I% I(+
+
+716130*
+1L L(+
+
+716120*
+1L	 L(
+
+716160*
+1L. L(J
+
+716344*
+1L. L(J
+
+718347*
+1LK L(O
+
+712344*
+1L. L(J
+
+712820*
+1L. L(J
+
+712344*
+1L. L(J
+
+717760*
+1P	 P(
+
+716344*
+1P	 P(
+
+718347*
+1P P( 
+
+713144*
+1P	 P(
+
+713420*
+1P	 P(
+
+713144*
+1P	 P(
+
+714260*
+1R R(
+
+71644*
+1R R(
+
+716947*
+1R R(
+
+854260*
+1W W(&
+
+857476*
+1W7 W(P
+
+854019*
+1V V(
+
+854020*
+1V V(
+
+854220*
+1W W(&
+
+857430*
+1WQ W(X
+
+857420*
+1W7 W(P
+
+856130*
+1X X(.
+
+856120*
+1X	 X(
+
+856160*
+1X1 X(M
+
+856344*
+1X1 X(M
+
+856547*
+1XN X(V
+
+852344*
+1X1 X(M
+
+852820*
+1X1 X(M
+
+852344*
+1X1 X(M
+
+856747*
+1Y( Y(9
+
+856344*
+1\	 \(
+
+856547*
+1\ \($
+
+853144*
+1\	 \(
+
+853420*
+1\	 \(
+
+853144*
+1\	 \(
+
+856130*
+1e e(-
+
+856120*
+1e	 e(
+
+856160*
+1e0 e(L
+
+856344*
+1e0 e(L
+
+858347*
+1eM e(Q
+
+852344*
+1e0 e(L
+
+852820*
+1e0 e(L
+
+852344*
+1e0 e(L
+
+854260*
+1f f(
+
+85644*
+1f f(
+
+856947*
+1f f(
+
+884019*
+1j j(
+
+884020*
+1j j(
+
+886130*
+1l l(&
+
+886120*
+1l	 l(
+
+886160*
+1l) l(E
+
+886344*
+1l) l(E
+
+886547*
+1lF l(N
+
+882344*
+1l) l(E
+
+882820*
+1l) l(E
+
+882344*
+1l) l(E
+
+886747*
+1m( m(9
+
+884820*
+1o+ o(1
+
+884820*
+1o2 o(:
+
+885544*
+1o2 o(:
+
+887947*
+1p p(*
+
+883444*
+1t	 t(
+
+889147*
+1t t(5
+
+883144*
+1t	 t(
+
+883420*
+1t	 t(
+
+883144*
+1t	 t(
+
+884820*
+1y y($
+
+884820*
+1y% y(-
+
+885544*
+1y% y(-
+
+886160*
+1{	 {(%
+
+886344*
+1{	 {(%
+
+888347*
+1{& {(*
+
+882344*
+1{	 {(%
+
+882820*
+1{	 {(%
+
+882344*
+1{	 {(%
+
+934260*
+1€ €(&
+
+934019*
+1 (
+
+934020*
+1 (
+
+934220*
+1€ €(&
+
+936130*
+1 (&
+
+936120*
+1	 (
+
+936160*
+1) (E
+
+936344*
+1) (E
+
+936547*
+1F (N
+
+932344*
+1) (E
+
+932820*
+1) (E
+
+932344*
+1) (E
+
+936747*
+1‚( ‚(9
+
+934820*
+1„+ „(1
+
+934820*
+1„2 „(8
+
+935044*
+1„2 „(8
+
+937947*
+1… …(*
+
+934820*
+1ˆ ˆ($
+
+934820*
+1ˆ% ˆ(+
+
+935044*
+1ˆ% ˆ(+
+
+936130*
+1Š Š(.
+
+936120*
+1Š	 Š(
+
+936160*
+1Š1 Š(M
+
+936344*
+1Š1 Š(M
+
+938347*
+1ŠN Š(R
+
+932344*
+1Š1 Š(M
+
+932820*
+1Š1 Š(M
+
+932344*
+1Š1 Š(M
+
+936344*
+1’	 ’(
+
+936547*
+1’ ’($
+
+933144*
+1’	 ’(
+
+933420*
+1’	 ’(
+
+933144*
+1’	 ’(
+
+934260*
+1œ œ(
+
+93644*
+1œ œ(
+
+936947*
+1œ œ(
+
+816160*
+1Ÿ Ÿ(
+
+817476*
+1Ÿ) Ÿ(B
+
+816120*
+1Ÿ Ÿ(
+
+817430*
+1ŸC Ÿ(J
+
+817420*
+1Ÿ) Ÿ(B
+
+816120*
+1   ("
+
+694260*
+1¨ ¨('
+
+696176*
+1¨3 ¨(E
+
+694220*
+1¨ ¨('
+
+696130*
+1¨F ¨(P
+
+696120*
+1¨3 ¨(E
+
+694220*
+1© ©(*

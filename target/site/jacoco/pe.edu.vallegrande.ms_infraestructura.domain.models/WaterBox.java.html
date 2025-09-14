@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WaterBox.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ms_infraestructura</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.ms_infraestructura.domain.models</a> &gt; <span class="el_source">WaterBox.java</span></div><h1>WaterBox.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.ms_infraestructura.domain.models;
+
+import jakarta.persistence.*;
+import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import pe.edu.vallegrande.ms_infraestructura.domain.enums.BoxType;
+import pe.edu.vallegrande.ms_infraestructura.domain.enums.Status;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = &quot;water_boxes&quot;)
+@Getter
+<span class="nc" id="L16">@Setter</span>
+<span class="fc" id="L17">@NoArgsConstructor</span>
+<span class="fc" id="L18">@AllArgsConstructor</span>
+<span class="nc" id="L19">@Builder</span>
+@EntityListeners(AuditingEntityListener.class)
+public class WaterBox {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Autoincremental
+    @Column(name = &quot;id&quot;, updatable = false, nullable = false)
+<span class="fc" id="L25">    private Long id; // ID numérico</span>
+
+    @Column(name = &quot;organization_id&quot;, nullable = false)
+<span class="fc" id="L28">    private String organizationId; // Cambiado a String para coincidir con los DTOs</span>
+
+    @Column(name = &quot;box_code&quot;, nullable = false, unique = true, length = 50)
+<span class="fc" id="L31">    private String boxCode;</span>
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = &quot;box_type&quot;, nullable = false, length = 20)
+<span class="fc" id="L35">    private BoxType boxType;</span>
+
+    @Column(name = &quot;installation_date&quot;, nullable = false)
+<span class="fc" id="L38">    private LocalDate installationDate;</span>
+
+    // Referencia a la asignación actual (puede ser nula si no está asignada)
+    @Column(name = &quot;current_assignment_id&quot;)
+<span class="fc" id="L42">    private Long currentAssignmentId; // ID numérico de la asignación</span>
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = &quot;status&quot;, nullable = false, length = 10)
+<span class="fc" id="L46">    private Status status;</span>
+
+    @CreatedDate
+    @Column(name = &quot;created_at&quot;, nullable = false, updatable = false)
+<span class="nc" id="L50">    private LocalDateTime createdAt;</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

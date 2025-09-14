@@ -1,0 +1,6 @@
+pe.edu.vallegrande.ms_infraestructura.infrastructure.rest.admin.AdminRest#updateWaterBox(Ljava/lang/Long;Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxRequest;)Lorg/springframework/http/ResponseEntity;
+false
+b9e5c438623d94a649afe21a072f096d
+org.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
+==
+update pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxService#update(Ljava/lang/Long;Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxRequest;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxResponse;

@@ -1,0 +1,221 @@
+
+1.0infrastructuraJavaFrontend"1757830683318*java2.BÊ
+[
+Vsrc/main/java/pe/edu/vallegrande/ms_infraestructura/application/config/CorsConfig.java2
+
+package4
+=
+8pe.edu.vallegrande.ms_infraestructura.application.config5
+H
+Cpe.edu.vallegrande.ms_infraestructura.application.config.CorsConfig7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+
+CorsConfig12
+:
+4org.springframework.context.annotation.Configuration14
+
+unknown15
+
+annotated by16
+
+
+uses17
+Å
+{pe.edu.vallegrande.ms_infraestructura.application.config.CorsConfig#corsFilter()Lorg/springframework/web/filter/CorsFilter;19
+
+method20
+
+
+corsFilter21
+/
+)org.springframework.web.filter.CorsFilter23
+
+returns24
+1
++org.springframework.context.annotation.Bean26
+4
+.org.springframework.web.cors.CorsConfiguration28
+
+is type29
+
+calls30
+
+
+references31
+ê
+âorg.springframework.web.cors.CorsConfiguration#setAllowedOriginPatterns(Ljava/util/List;)Lorg/springframework/web/cors/CorsConfiguration;33
+Y
+Sorg.springframework.web.cors.CorsConfiguration#setAllowedMethods(Ljava/util/List;)V35
+Y
+Sorg.springframework.web.cors.CorsConfiguration#setAllowedHeaders(Ljava/util/List;)V37
+Y
+Sorg.springframework.web.cors.CorsConfiguration#setExposedHeaders(Ljava/util/List;)V39
+^
+Xorg.springframework.web.cors.CorsConfiguration#setAllowCredentials(Ljava/lang/Boolean;)V41
+Q
+Korg.springframework.web.cors.CorsConfiguration#setMaxAge(Ljava/lang/Long;)V43
+B
+<org.springframework.web.cors.UrlBasedCorsConfigurationSource45
+¢
+õorg.springframework.web.cors.UrlBasedCorsConfigurationSource#registerCorsConfiguration(Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;)V47J
+
+1
+12Z
+
+3	
+354jÌ
+@
+18:
+181920 *
+1 (26:3B
+	
+9
+10
+
+
+11
+21
+
+36
+363715
+
+44
+444515
+
+46
+464715
+
+27
+272815
+
+34
+343515
+
+13
+131415
+
+40
+404115
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+
+22
+222315
+
+32
+323315
+
+42
+424315
+
+25
+252615
+
+38
+383915rã
+
+61316*
+1 (
+
+61317*
+1 (
+
+6617*
+1 (
+
+182224*
+1 (
+
+182516*
+1 (
+
+182517*
+1 (
+
+
+182217*
+1 (
+
+182729*
+1 (,
+
+182717*
+1	 (
+
+182730*
+13 (D
+
+182724*
+1	 (
+
+182731*
+1	 (
+
+183230*
+1 (3
+
+182731*
+1	 (
+
+183430*
+1 (,
+
+182731*
+1 	  (
+
+183630*
+1   (,
+
+182731*
+1"	 "(
+
+183830*
+1" "(,
+
+182731*
+1+	 +(
+
+184030*
+1+ +(.
+
+182731*
+1-	 -(
+
+184230*
+1- -($
+
+184429*
+1/) /(/
+
+184417*
+1/	 /((
+
+184430*
+1/6 /(U
+
+184431*
+10	 0(
+
+184630*
+10 0()
+
+182230*
+12 2(

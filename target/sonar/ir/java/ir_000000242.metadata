@@ -1,0 +1,6 @@
+pe.edu.vallegrande.ms_infraestructura.infrastructure.rest.superAdmin.SuperAdminRest#getAllActiveWaterBoxes()Lorg/springframework/http/ResponseEntity;
+false
+9e75121a91b9ac72bdf49f39236d681d
+org.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
+==
+getAllActive pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxService#getAllActive()Ljava/util/List;

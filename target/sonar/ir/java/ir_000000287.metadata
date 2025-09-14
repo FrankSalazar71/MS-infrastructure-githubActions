@@ -1,0 +1,7 @@
+pe.edu.vallegrande.ms_infraestructura.infrastructure.rest.admin.AdminRest#createWaterBox(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxRequest;)Lorg/springframework/http/ResponseEntity;
+false
+78777bb7f0b8116ab0fd070b8a62c956
+org.springframework.http.ResponseEntity#status(Lorg/springframework/http/HttpStatusCode;)Lorg/springframework/http/ResponseEntity$BodyBuilder;
+==
+body org.springframework.http.ResponseEntity$BodyBuilder#body(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
+save pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxService#save(Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxRequest;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxResponse;

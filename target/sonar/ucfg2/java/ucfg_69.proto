@@ -1,0 +1,182 @@
+
+Òpe.edu.vallegrande.ms_infraestructura.infrastructure.rest.admin.AdminRest#updateAssignment(Ljava/lang/Long;Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxAssignmentRequest;)Lorg/springframework/http/ResponseEntity;€
+–C:/Users/frank/Desktop/Carpeta General/microservicio-infrastructure-actualizado/microservicios/vg-ms-infrastructure/src/main/java/pe/edu/vallegrande/ms_infraestructura/infrastructure/rest/admin/AdminRest.java96 9(F"startingBlock*«
+startingBlock	9F 9(îø
+º
+
+__unknown_file (
+%3"__id*ì
+
+__unknown_file (w*u
+e
+requestZpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequest"
+
+monthlyFeeæ
+ª
+
+__unknown_file (
+%4"__id*í
+
+__unknown_file (v*t
+e
+requestZpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequest"
+	startDateª
+∏
+
+__unknown_file (
+%5"__id*è
+
+__unknown_file (s*q
+e
+requestZpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequest"
+userId|
+z
+9^ 9(d
+%6"
+__annotate*8
+
+__unknown_file (
+jakarta.validation.Valid*"
+
+__unknown_file (
+
+%4ò
+ï
+9e 9(q
+%7"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*"
+
+__unknown_file (
+
+%4€
+ÿ
+
+9å 9(ìt
+e
+requestZpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequest"
+	startDate"__annotation*"
+
+__unknown_file (
+
+%6*"
+
+__unknown_file (
+
+%7|
+z
+9^ 9(d
+%8"
+__annotate*8
+
+__unknown_file (
+jakarta.validation.Valid*"
+
+__unknown_file (
+
+%3ò
+ï
+9e 9(q
+%9"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*"
+
+__unknown_file (
+
+%3‹
+Ÿ
+
+9å 9(ìu
+e
+requestZpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequest"
+
+monthlyFee"__annotation*"
+
+__unknown_file (
+
+%8*"
+
+__unknown_file (
+
+%9}
+{
+9^ 9(d
+%10"
+__annotate*8
+
+__unknown_file (
+jakarta.validation.Valid*"
+
+__unknown_file (
+
+%5ô
+ñ
+9e 9(q
+%11"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*"
+
+__unknown_file (
+
+%5⁄
+◊
+
+9å 9(ìq
+e
+requestZpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequest"
+userId"__annotation*#
+
+__unknown_file (
+
+%10*#
+
+__unknown_file (
+
+%11*
+1*Ü
+1: :(˚
+¯
+:! :(:[
+%0Upe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService"__id*à
+
+__unknown_file (l*jK
+Ipe.edu.vallegrande.ms_infraestructura.infrastructure.rest.admin.AdminRest"
+waterBoxAssignmentService«ƒ
+:! :(Nb
+%1\pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxAssignmentResponse"®pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService#update(Ljava/lang/Long;Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxAssignmentRequest;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxAssignmentResponse;*y
+
+__unknown_file (]
+[
+%0Upe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxAssignmentService*2
+
+__unknown_file (
+
+idjava.lang.Long*É
+
+__unknown_file (g
+e
+requestZpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequest2tupdate(Ljava/lang/Long;Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/request/WaterBoxAssignmentRequest;)Ò
+Ó
+: :(O-
+%2'org.springframework.http.ResponseEntity"gorg.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;*G
+
+__unknown_file (+")
+'org.springframework.http.ResponseEntity*Ä
+
+__unknown_file (d
+b
+%1\pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.response.WaterBoxAssignmentResponse";
+: :(P/
+-
+%2'org.springframework.http.ResponseEntity: 
+9G 9(]
+idjava.lang.Long:r
+	9^ 9(ìe
+requestZpe.edu.vallegrande.ms_infraestructura.infrastructure.dto.request.WaterBoxAssignmentRequestBMK
+Ipe.edu.vallegrande.ms_infraestructura.infrastructure.rest.admin.AdminRestH

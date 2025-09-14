@@ -1,0 +1,7 @@
+pe.edu.vallegrande.ms_infraestructura.infrastructure.dto.StringListConverter#convertToEntityAttribute(Ljava/lang/String;)Ljava/util/List;
+false
+db9aeb78b8be6c615f5d18406dd7c401
+java.lang.String#split(Ljava/lang/String;)[Ljava/lang/String;
+java.util.ArrayList#<init>(Ljava/util/Collection;)V
+java.util.ArrayList#instance-init#
+java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;

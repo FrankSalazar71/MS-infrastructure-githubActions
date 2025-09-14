@@ -1,0 +1,6 @@
+pe.edu.vallegrande.ms_infraestructura.infrastructure.rest.superAdmin.SuperAdminRest#getWaterBoxById(Ljava/lang/Long;)Lorg/springframework/http/ResponseEntity;
+false
+384740cd787d8b5a8f480d23519191e5
+org.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
+==
+getById pe.edu.vallegrande.ms_infraestructura.application.services.IWaterBoxService#getById(Ljava/lang/Long;)Lpe/edu/vallegrande/ms_infraestructura/infrastructure/dto/response/WaterBoxResponse;
